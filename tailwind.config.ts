@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        cooperbt: ["var(--font-cooperbt)"],
+        tthovespro: ["var(--font-tthovespro)"],
+      },
       colors: {
         neutral: {
           100: "#F8F9FA",

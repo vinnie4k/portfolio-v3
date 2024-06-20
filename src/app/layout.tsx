@@ -1,8 +1,48 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+// Fonts
+const cooperBT = localFont({
+  src: [
+    {
+      path: "../../public/fonts/CooperBT-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/CooperBT-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/CooperBT-SemiBold.otf",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+  variable: "--font-cooperbt",
+});
+const ttHovesPro = localFont({
+  src: [
+    {
+      path: "../../public/fonts/TTHovesPro-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/TTHovesPro-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/TTHovesPro-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+  variable: "--font-tthovespro",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +56,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${cooperBT.variable} ${ttHovesPro.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
