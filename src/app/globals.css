@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Universal */
+  body {
+    @apply bg-secondary-300;
+  }
+
+  .container {
+    @apply flex flex-col px-4 gap-[120px] pt-[120px] pb-[60px];
+  }
+
+  /* Animations */
+  .animate-opacity {
+    @apply transition-opacity duration-300 hover:opacity-80;
+  }
+
+  /* Gradient */
+  .grad-announcements {
+    @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1];
+  }
+
+  .grad-uplift {
+    @apply bg-gradient-to-b from-[#FCE28B] to-[#FED13C];
+  }
+
+  .grad-status {
+    @apply bg-gradient-to-b from-[#7EECC8] to-[#589E87];
+  }
+
+  .grad-grabbit {
+    @apply bg-gradient-to-b from-[#E6E2FF] to-[#FFD1DC];
+  }
+
+  .grad-volume {
+    @apply bg-gradient-to-b from-[#FFC8B2] to-[#FF8453];
+  }
+
+  .grad-scribbly {
+    @apply bg-gradient-to-b from-[#192024] to-[#334149];
+  }
+
+  /* Mobile */
+  h1 {
+    @apply text-[2.5rem] leading-[3rem] font-cooperbt font-medium;
+  }
+
+  h2 {
+    @apply text-[2rem] leading-[2.5rem] font-cooperbt font-medium;
+  }
+
+  h3 {
+    @apply text-[1.75rem] leading-[2rem] font-cooperbt font-medium;
+  }
+
+  h4 {
+    @apply text-[1.5rem] leading-[1.75rem] font-cooperbt font-medium;
+  }
+
+  h5 {
+    @apply text-[1.25rem] leading-[1.75rem] font-cooperbt font-normal;
+  }
+
+  h6 {
+    @apply text-[1rem] leading-[1.75rem] font-cooperbt font-normal;
+  }
+
+  .s1 {
+    @apply text-[1.25rem] leading-[1.75rem] font-tthovespro font-normal;
+  }
+
+  .s2 {
+    @apply text-[1rem] leading-[1.5rem] font-tthovespro font-normal;
+  }
+
+  .b1 {
+    @apply text-[1rem] leading-[1.5rem] font-tthovespro;
+  }
+
+  .b2 {
+    @apply text-[0.875rem] leading-[1.125rem] font-tthovespro;
+  }
+
+  .label {
+    @apply text-[0.875rem] leading-[1rem] font-tthovespro font-normal;
+  }
+
+  /* Tablet */
+  @media screen(md) {
+    h1 {
+      @apply text-[3rem] leading-[4rem] font-cooperbt font-medium;
+    }
+
+    h2 {
+      @apply text-[2.5rem] leading-[3rem] font-cooperbt font-medium;
+    }
+
+    h3 {
+      @apply text-[2rem] leading-[2.5rem] font-cooperbt font-medium;
+    }
+
+    h4 {
+      @apply text-[1.75rem] leading-[2rem] font-cooperbt font-medium;
+    }
+
+    h5 {
+      @apply text-[1.5rem] leading-[1.75rem] font-cooperbt font-medium;
+    }
+
+    h6 {
+      @apply text-[1.25rem] leading-[1.75rem] font-cooperbt font-medium;
+    }
+
+    .s1 {
+      @apply text-[1.5rem] leading-[2.5rem] font-tthovespro font-normal;
+    }
+
+    .s2 {
+      @apply text-[1.125rem] leading-[1.5rem] font-tthovespro font-normal;
+    }
+
+    .b1 {
+      @apply text-[1rem] leading-[1.5rem] font-tthovespro;
+    }
+
+    .b2 {
+      @apply text-[0.875rem] leading-[1.25rem] font-tthovespro;
+    }
+
+    .label {
+      @apply text-[0.875rem] leading-[1rem] font-tthovespro font-normal;
+    }
+  }
+
+  /* Desktop */
+  @media screen(lg) {
+    h1 {
+      @apply text-[4rem] leading-[4.5rem] font-cooperbt font-medium;
+    }
+
+    h2 {
+      @apply text-[3rem] leading-[4rem] font-cooperbt font-medium;
+    }
+
+    h3 {
+      @apply text-[2.5rem] leading-[3rem] font-cooperbt font-medium;
+    }
+
+    h4 {
+      @apply text-[2rem] leading-[2.5rem] font-cooperbt font-medium;
+    }
+
+    h5 {
+      @apply text-[1.5rem] leading-[2.5rem] font-cooperbt font-medium;
+    }
+
+    h6 {
+      @apply text-[1.25rem] leading-[2rem] font-cooperbt font-medium;
+    }
+
+    .s1 {
+      @apply text-[1.5rem] leading-[2.5rem] font-tthovespro font-normal;
+    }
+
+    .s2 {
+      @apply text-[1.25rem] leading-[1.75rem] font-tthovespro font-normal;
+    }
+
+    .b1 {
+      @apply text-[1.125rem] leading-[1.75rem] font-tthovespro;
+    }
+
+    .b2 {
+      @apply text-[1rem] leading-[1.5rem] font-tthovespro;
+    }
+
+    .label {
+      @apply text-[0.875rem] leading-[1rem] font-tthovespro font-normal;
+    }
+  }
+}
