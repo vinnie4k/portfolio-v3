@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+  /* Gradient */
+  .grad-announcements {
+    @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1];
+  }
+
+  .grad-uplift {
+    @apply bg-gradient-to-b from-[#FCE28B] to-[#FED13C];
+  }
+
+  .grad-status {
+    @apply bg-gradient-to-b from-[#7EECC8] to-[#589E87];
+  }
+
+  .grad-grabbit {
+    @apply bg-gradient-to-b from-[#E6E2FF] to-[#FFD1DC];
+  }
+
+  .grad-volume {
+    @apply bg-gradient-to-b from-[#FFC8B2] to-[#FF8453];
+  }
+
+  .grad-scribbly {
+    @apply bg-gradient-to-b from-[#192024] to-[#334149];
+  }
+
   /* Mobile */
   h1 {
     @apply text-[2.5rem] leading-[3rem];
