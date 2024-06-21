@@ -18,30 +18,31 @@ export default function Scribbly() {
   return (
     <>
       {/* Hero */}
-      <div className="flex flex-col gap-12 items-center">
-        {/* Heading */}
-        <div className="flex flex-col items-center marker:gap-1">
-          <h1 className="text-neutral-900">Scribbly</h1>
-          <p className="s2 text-neutral-600">
-            Your Daily Dose of Artistic Inspiration.
-          </p>
+      <div className="h-[720px] dark">
+        <div className="flex flex-col gap-12 items-center hero-container grad-scribbly">
+          {/* Heading */}
+          <div className="flex flex-col items-center marker:gap-1">
+            <h1 className="text-neutral-900 dark:text-neutral-100">Scribbly</h1>
+            <p className="s2 text-neutral-600 dark:text-neutral-400">
+              Your Daily Dose of Artistic Inspiration.
+            </p>
+          </div>
+
+          {/* Description */}
+          <WorkDescription
+            roles={["Developer"]}
+            timeline={["Winter 2023"]}
+            frontend={["UIKit"]}
+            backend={["Firebase"]}
+          />
+          {/* Image */}
+          <Image
+            src={scribblyMain}
+            alt="Image of the Scribbly project"
+            placeholder="empty"
+            className="object-contain"
+          />
         </div>
-
-        {/* Description */}
-        <WorkDescription
-          roles={["Developer"]}
-          timeline={["Winter 2023"]}
-          frontend={["UIKit"]}
-          backend={["Firebase"]}
-        />
-
-        {/* Image */}
-        <Image
-          src={scribblyMain}
-          alt="Image of the Scribbly project"
-          placeholder="blur"
-          className="object-contain"
-        />
       </div>
 
       {/* Content */}

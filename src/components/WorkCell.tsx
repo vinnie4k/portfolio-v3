@@ -21,8 +21,6 @@ export default function WorkCell({ project }: props) {
   let gradient = "";
   let imageWidth = 0;
 
-  const useDarkColors = project === Project.Scribbly;
-
   switch (project) {
     case Project.Announcements: {
       subtitle = "Web App";
@@ -82,19 +80,13 @@ export default function WorkCell({ project }: props) {
 
   return (
     <div
-      className={`${gradient} flex flex-col gap-4 p-6 pb-0 rounded-[16px] h-[320px]`}
+      className={`${gradient} flex flex-col gap-4 p-6 pb-0 rounded-[16px] h-[320px] ${
+        project === Project.Scribbly && "dark"
+      }`}
     >
       <div className="flex flex-col gap-1 text-end">
-        <p
-          className={`b1 ${
-            useDarkColors ? "text-neutral-300" : "text-neutral-700"
-          }`}
-        >
-          {subtitle}
-        </p>
-        <h3 className={useDarkColors ? "text-neutral-100" : "text-neutral-900"}>
-          {title}
-        </h3>
+        <p className="b1 text-neutral-700 dark:text-neutral-300">{subtitle}</p>
+        <h3 className="text-neutral-900 dark:text-neutral-100">{title}</h3>
       </div>
       <div className="overflow-hidden">
         <Image

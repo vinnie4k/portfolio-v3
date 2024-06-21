@@ -12,7 +12,7 @@ export default function About() {
           <Image
             src={headshotImg}
             alt="Headshot of Vin Bui"
-            placeholder="blur"
+            placeholder="empty"
             className="object-cover"
             fill
           />
