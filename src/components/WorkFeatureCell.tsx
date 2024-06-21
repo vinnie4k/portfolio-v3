@@ -14,7 +14,7 @@ export default function WorkFeatureCell({
   description,
 }: props) {
   return (
-    <div className="flex flex-col gap-4 p-6 bg-secondary-500 rounded-[24px] animate-up">
+    <div className="flex flex-col gap-4 p-6 bg-secondary-500 rounded-[24px] animate-up animate-opacity-r">
       <div className="flex flex-row gap-4 items-center">
         <Image src={icon} alt={iconAlt} width={36} />
         <h4 className="text-neutral-900">{title}</h4>

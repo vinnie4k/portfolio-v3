@@ -18,11 +18,15 @@
 
   /* Animations */
   .animate-opacity {
-    @apply transition-opacity ease-in-out duration-300 hover:opacity-80;
+    @apply transition-all ease-in-out duration-300 hover:opacity-90;
+  }
+
+  .animate-opacity-r {
+    @apply transition-all ease-in-out duration-300 opacity-90 hover:opacity-100;
   }
 
   .animate-underline {
-    @apply underline decoration-primary-500 decoration-2 transition-all ease-in-out duration-300;
+    @apply transition-all ease-in-out duration-300 underline decoration-primary-500 decoration-2;
   }
 
   .animate-up {

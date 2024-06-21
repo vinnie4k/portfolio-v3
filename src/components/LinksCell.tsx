@@ -23,7 +23,7 @@ export default function LinksCell({
         <a
           href={playstore}
           target="_blank"
-          className="animate-opacity animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
+          className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
             <Image src={playstoreIcon} alt="Play Store Icon" width={36} />
@@ -35,7 +35,7 @@ export default function LinksCell({
       <a
         href={github}
         target="_blank"
-        className="animate-opacity animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
+        className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
       >
         <div className="flex flex-col gap-2 items-center">
           <Image src={githubIcon} alt="GitHub Icon" width={36} />
@@ -47,7 +47,7 @@ export default function LinksCell({
         <a
           href={website}
           target="_blank"
-          className="animate-opacity animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
+          className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
             <Image src={globeIcon} alt="Website Icon" width={36} />
@@ -60,7 +60,7 @@ export default function LinksCell({
         <a
           href={appstore}
           target="_blank"
-          className="animate-opacity animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
+          className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
             <Image src={appstoreIcon} alt="AppStore Icon" width={36} />
