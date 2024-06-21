@@ -12,6 +12,7 @@ import medalIcon from "../../../public/icons/medal.svg";
 import galleryIcon from "../../../public/icons/gallery.svg";
 import ImageBlock from "@/components/ImageBlock";
 import LinksCell from "@/components/LinksCell";
+import NextCell from "@/components/NextCell";
 
 export default function Scribbly() {
   return (
@@ -124,6 +125,12 @@ export default function Scribbly() {
       </div>
 
       {/* Next */}
+      <NextCell
+        prevText="Volume"
+        prevLink="/volume"
+        nextText="Announcements"
+        nextLink="/announcements"
+      />
     </>
   );
 }

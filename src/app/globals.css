@@ -17,6 +17,10 @@
     @apply transition-opacity duration-300 hover:opacity-80;
   }
 
+  .animate-underline {
+    @apply transition-all ease-in-out duration-300;
+  }
+
   /* Gradient */
   .grad-announcements {
     @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1];
