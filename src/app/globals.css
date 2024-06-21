@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  /* Universal */
+  body {
+    @apply bg-secondary-300;
+  }
+
+  .container {
+    @apply flex flex-col px-4 gap-[120px] pt-[120px] pb-[60px];
+  }
+
+  /* Animations */
+  .animate-opacity {
+    @apply transition-opacity duration-300 hover:opacity-80;
+  }
+
   /* Gradient */
   .grad-announcements {
     @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1];

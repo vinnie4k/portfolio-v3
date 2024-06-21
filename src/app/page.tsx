@@ -1,9 +1,36 @@
+import FooterBar from "@/components/FooterBar";
+import FooterMessage from "@/components/FooterMessage";
+import WorkCell from "@/components/WorkCell";
+import { Project } from "@/constants";
+
 export default function Work() {
   return (
-    <main className="flex">
-      <div className="flex bg-green-500 text-center">
-        <h1>Hi. I'm Vin. Developer & Engineer.</h1>
+    <div className="container">
+      {/* Hero */}
+      <div className="flex flex-col gap-6 text-center">
+        <div className="flex flex-col gap-1">
+          <h1 className="text-neutral-900">Hi. I'm Vin.</h1>
+          <h1 className="text-neutral-900">Developer & Engineer.</h1>
+        </div>
+        <p className="s2 text-neutral-600">
+          A driven creator and technologist, constantly seeking to elevate user
+          experiences through innovative solutions and cutting-edge development.
+        </p>
       </div>
-    </main>
+
+      {/* Work */}
+      <div className="flex flex-col gap-8">
+        <WorkCell project={Project.Announcements} />
+        <WorkCell project={Project.Uplift} />
+        <WorkCell project={Project.Status} />
+        <WorkCell project={Project.Grabbit} />
+        <WorkCell project={Project.Volume} />
+        <WorkCell project={Project.Scribbly} />
+      </div>
+
+      {/* Footer */}
+      <FooterMessage />
+      <FooterBar />
+    </div>
   );
 }
