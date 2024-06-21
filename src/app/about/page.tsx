@@ -12,8 +12,8 @@ export default function About() {
           <Image
             src={headshotImg}
             alt="Headshot of Vin Bui"
-            objectFit="cover"
             placeholder="blur"
+            className="object-cover"
             fill
           />
         </div>

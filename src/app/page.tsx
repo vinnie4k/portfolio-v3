@@ -1,5 +1,3 @@
-import FooterBar from "@/components/FooterBar";
-import FooterMessage from "@/components/FooterMessage";
 import WorkCell from "@/components/WorkCell";
 import { Project } from "@/constants";
 

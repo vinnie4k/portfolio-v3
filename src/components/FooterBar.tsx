@@ -1,6 +1,7 @@
-import GitHubSvg from "@/svg/GitHubSvg";
-import InstagramSvg from "@/svg/InstagramSvg";
-import LinkedInSvg from "@/svg/LinkedInSvg";
+import Image from "next/image";
+import githubIcon from "../../public/icons/github-dk.svg";
+import linkedinIcon from "../../public/icons/linkedin.svg";
+import instagramIcon from "../../public/icons/instagram.svg";
 
 export default function FooterBar() {
   return (
@@ -10,24 +11,27 @@ export default function FooterBar() {
       </p>
       <div className="flex flex-row gap-8">
         <a href="https://github.com/vinnie4k" target="_blank">
-          <GitHubSvg
-            width={21}
-            height={20}
-            className="fill-neutral-900 animate-opacity"
+          <Image
+            src={githubIcon}
+            alt="GitHub Icon"
+            width={20}
+            className="animate-opacity"
           />
         </a>
         <a href="https://www.linkedin.com/in/vin-bui/" target="_blank">
-          <LinkedInSvg
-            width={21}
-            height={20}
-            className="fill-neutral-900 animate-opacity"
+          <Image
+            src={linkedinIcon}
+            alt="LinkedIn Icon"
+            width={20}
+            className="animate-opacity"
           />
         </a>
         <a href="https://www.instagram.com/vin.bui/" target="_blank">
-          <InstagramSvg
-            width={21}
-            height={20}
-            className="fill-neutral-900 animate-opacity"
+          <Image
+            src={instagramIcon}
+            alt="Instagram Icon"
+            width={20}
+            className="animate-opacity"
           />
         </a>
       </div>

@@ -2,12 +2,12 @@ import { Project } from "@/constants";
 import Image from "next/image";
 
 import placeholderImg from "../../public/placeholder.png";
-import announcementsImg from "../../public/work/announcements.png";
-import upliftImg from "../../public/work/uplift.png";
-import statusImg from "../../public/work/status.png";
-import grabbitImg from "../../public/work/grabbit.png";
-import volumeImg from "../../public/work/volume.png";
-import scribblyImg from "../../public/work/scribbly.png";
+import announcementsImg from "../../public/announcements/announcements-main.png";
+import upliftImg from "../../public/uplift/uplift-main.png";
+import statusImg from "../../public/status/status-main.png";
+import grabbitImg from "../../public/grabbit/grabbit-main.png";
+import volumeImg from "../../public/volume/volume-main.png";
+import scribblyImg from "../../public/scribbly/scribbly-main.png";
 
 interface props {
   project: Project;
