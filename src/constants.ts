@@ -6,3 +6,10 @@ export enum Project {
   Volume,
   Scribbly,
 }
+
+export enum Experience {
+  Glassdoor,
+  Terra,
+  Llounge,
+  AppDev,
+}

@@ -1,7 +1,7 @@
 import { Project } from "@/constants";
 import Image from "next/image";
 
-import placeholderImg from "../../public/work/placeholder.png";
+import placeholderImg from "../../public/placeholder.png";
 import announcementsImg from "../../public/work/announcements.png";
 import upliftImg from "../../public/work/uplift.png";
 import statusImg from "../../public/work/status.png";

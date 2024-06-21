@@ -5,7 +5,7 @@ import { Project } from "@/constants";
 
 export default function Work() {
   return (
-    <div className="container">
+    <>
       {/* Hero */}
       <div className="flex flex-col gap-6 text-center">
         <div className="flex flex-col gap-1">
@@ -27,10 +27,6 @@ export default function Work() {
         <WorkCell project={Project.Volume} />
         <WorkCell project={Project.Scribbly} />
       </div>
-
-      {/* Footer */}
-      <FooterMessage />
-      <FooterBar />
-    </div>
+    </>
   );
 }
