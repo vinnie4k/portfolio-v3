@@ -1,7 +1,9 @@
-export default function Home() {
+export default function Work() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 grad-announcements">
-      <p>Test</p>
+    <main className="flex">
+      <div className="flex bg-green-500 text-center">
+        <h1>Hi. I'm Vin. Developer & Engineer.</h1>
+      </div>
     </main>
   );
 }

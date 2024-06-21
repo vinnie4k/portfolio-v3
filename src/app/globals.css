@@ -30,140 +30,140 @@
 
   /* Mobile */
   h1 {
-    @apply text-[2.5rem] leading-[3rem];
+    @apply text-[2.5rem] leading-[3rem] font-cooperbt font-medium;
   }
 
   h2 {
-    @apply text-[2rem] leading-[2.5rem];
+    @apply text-[2rem] leading-[2.5rem] font-cooperbt font-medium;
   }
 
   h3 {
-    @apply text-[1.75rem] leading-[2rem];
+    @apply text-[1.75rem] leading-[2rem] font-cooperbt font-medium;
   }
 
   h4 {
-    @apply text-[1.5rem] leading-[1.75rem];
+    @apply text-[1.5rem] leading-[1.75rem] font-cooperbt font-medium;
   }
 
   h5 {
-    @apply text-[1.25rem] leading-[1.75rem];
+    @apply text-[1.25rem] leading-[1.75rem] font-cooperbt font-normal;
   }
 
   h6 {
-    @apply text-[1rem] leading-[1.75rem];
+    @apply text-[1rem] leading-[1.75rem] font-cooperbt font-normal;
   }
 
   .s1 {
-    @apply text-[1.25rem] leading-[1.75rem];
+    @apply text-[1.25rem] leading-[1.75rem] font-tthovespro font-normal;
   }
 
   .s2 {
-    @apply text-[1rem] leading-[1.5rem];
+    @apply text-[1rem] leading-[1.5rem] font-tthovespro font-normal;
   }
 
   .b1 {
-    @apply text-[1rem] leading-[1.5rem];
+    @apply text-[1rem] leading-[1.5rem] font-tthovespro;
   }
 
   .b2 {
-    @apply text-[0.875rem] leading-[1.125rem];
+    @apply text-[0.875rem] leading-[1.125rem] font-tthovespro;
   }
 
   .label {
-    @apply text-[0.875rem] leading-[1rem];
+    @apply text-[0.875rem] leading-[1rem] font-tthovespro font-normal;
   }
 
   /* Tablet */
   @media screen(md) {
     h1 {
-      @apply text-[3rem] leading-[4rem];
+      @apply text-[3rem] leading-[4rem] font-cooperbt font-medium;
     }
 
     h2 {
-      @apply text-[2.5rem] leading-[3rem];
+      @apply text-[2.5rem] leading-[3rem] font-cooperbt font-medium;
     }
 
     h3 {
-      @apply text-[2rem] leading-[2.5rem];
+      @apply text-[2rem] leading-[2.5rem] font-cooperbt font-medium;
     }
 
     h4 {
-      @apply text-[1.75rem] leading-[2rem];
+      @apply text-[1.75rem] leading-[2rem] font-cooperbt font-medium;
     }
 
     h5 {
-      @apply text-[1.5rem] leading-[1.75rem];
+      @apply text-[1.5rem] leading-[1.75rem] font-cooperbt font-medium;
     }
 
     h6 {
-      @apply text-[1.25rem] leading-[1.75rem];
+      @apply text-[1.25rem] leading-[1.75rem] font-cooperbt font-medium;
     }
 
     .s1 {
-      @apply text-[1.5rem] leading-[2.5rem];
+      @apply text-[1.5rem] leading-[2.5rem] font-tthovespro font-normal;
     }
 
     .s2 {
-      @apply text-[1.125rem] leading-[1.5rem];
+      @apply text-[1.125rem] leading-[1.5rem] font-tthovespro font-normal;
     }
 
     .b1 {
-      @apply text-[1rem] leading-[1.5rem];
+      @apply text-[1rem] leading-[1.5rem] font-tthovespro;
     }
 
     .b2 {
-      @apply text-[0.875rem] leading-[1.25rem];
+      @apply text-[0.875rem] leading-[1.25rem] font-tthovespro;
     }
 
     .label {
-      @apply text-[0.875rem] leading-[1rem];
+      @apply text-[0.875rem] leading-[1rem] font-tthovespro font-normal;
     }
   }
 
   /* Desktop */
   @media screen(lg) {
     h1 {
-      @apply text-[4rem] leading-[4.5rem];
+      @apply text-[4rem] leading-[4.5rem] font-cooperbt font-medium;
     }
 
     h2 {
-      @apply text-[3rem] leading-[4rem];
+      @apply text-[3rem] leading-[4rem] font-cooperbt font-medium;
     }
 
     h3 {
-      @apply text-[2.5rem] leading-[3rem];
+      @apply text-[2.5rem] leading-[3rem] font-cooperbt font-medium;
     }
 
     h4 {
-      @apply text-[2rem] leading-[2.5rem];
+      @apply text-[2rem] leading-[2.5rem] font-cooperbt font-medium;
     }
 
     h5 {
-      @apply text-[1.5rem] leading-[2.5rem];
+      @apply text-[1.5rem] leading-[2.5rem] font-cooperbt font-medium;
     }
 
     h6 {
-      @apply text-[1.25rem] leading-[2rem];
+      @apply text-[1.25rem] leading-[2rem] font-cooperbt font-medium;
     }
 
     .s1 {
-      @apply text-[1.5rem] leading-[2.5rem];
+      @apply text-[1.5rem] leading-[2.5rem] font-tthovespro font-normal;
     }
 
     .s2 {
-      @apply text-[1.25rem] leading-[1.75rem];
+      @apply text-[1.25rem] leading-[1.75rem] font-tthovespro font-normal;
     }
 
     .b1 {
-      @apply text-[1.125rem] leading-[1.75rem];
+      @apply text-[1.125rem] leading-[1.75rem] font-tthovespro;
     }
 
     .b2 {
-      @apply text-[1rem] leading-[1.5rem];
+      @apply text-[1rem] leading-[1.5rem] font-tthovespro;
     }
 
     .label {
-      @apply text-[0.875rem] leading-[1rem];
+      @apply text-[0.875rem] leading-[1rem] font-tthovespro font-normal;
     }
   }
 }
