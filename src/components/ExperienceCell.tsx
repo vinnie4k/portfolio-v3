@@ -53,7 +53,7 @@ export default function ExperienceCell({ experience }: props) {
   }
 
   return (
-    <div className="flex flex-row justify-between items-center bg-primary-200 py-3 px-6 rounded-[48px]">
+    <div className="flex flex-row justify-between items-center bg-primary-200 dark:bg-primary-800 py-3 px-6 rounded-[48px]">
       <div className="flex flex-row gap-3 items-center">
         <Image
           src={imageSrc}
@@ -62,11 +62,17 @@ export default function ExperienceCell({ experience }: props) {
           className="rounded-[16px]"
         />
         <div className="flex flex-col">
-          <p className="b1 font-medium text-neutral-900">{company}</p>
-          <p className="label text-neutral-700">{position}</p>
+          <p className="b1 font-medium text-neutral-900 dark:text-neutral-100">
+            {company}
+          </p>
+          <p className="label text-neutral-700 dark:text-neutral-300">
+            {position}
+          </p>
         </div>
       </div>
-      <p className="b1 font-medium text-neutral-900">{year}</p>
+      <p className="b1 font-medium text-neutral-900 dark:text-neutral-100">
+        {year}
+      </p>
     </div>
   );
 }

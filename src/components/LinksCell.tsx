@@ -18,7 +18,7 @@ export default function LinksCell({
   playstore,
 }: props) {
   return (
-    <div className="flex flex-row items-center justify-around bg-neutral-900 p-12 rounded-[24px]">
+    <div className="flex flex-row items-center justify-around bg-neutral-900 dark:bg-neutral-100 p-12 rounded-[24px]">
       {playstore && (
         <a
           href={playstore}
@@ -27,7 +27,9 @@ export default function LinksCell({
         >
           <div className="flex flex-col gap-2 items-center">
             <Image src={playstoreIcon} alt="Play Store Icon" width={36} />
-            <p className="b1 text-neutral-100">Play Store</p>
+            <p className="b1 text-neutral-100 dark:text-neutral-900">
+              Play Store
+            </p>
           </div>
         </a>
       )}
@@ -38,8 +40,11 @@ export default function LinksCell({
         className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
       >
         <div className="flex flex-col gap-2 items-center">
-          <GitHubIcon width={36} className="fill-neutral-100" />
-          <p className="b1 text-neutral-100">GitHub</p>
+          <GitHubIcon
+            width={36}
+            className="fill-neutral-100 dark:fill-neutral-900"
+          />
+          <p className="b1 text-neutral-100 dark:text-neutral-900">GitHub</p>
         </div>
       </a>
 
@@ -50,8 +55,11 @@ export default function LinksCell({
           className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
-            <GlobeIcon width={36} className="fill-neutral-100" />
-            <p className="b1 text-neutral-100">Website</p>
+            <GlobeIcon
+              width={36}
+              className="fill-neutral-100 dark:fill-neutral-900"
+            />
+            <p className="b1 text-neutral-100 dark:text-neutral-900">Website</p>
           </div>
         </a>
       )}
@@ -64,7 +72,9 @@ export default function LinksCell({
         >
           <div className="flex flex-col gap-2 items-center">
             <Image src={appstoreIcon} alt="AppStore Icon" width={36} />
-            <p className="b1 text-neutral-100">App Store</p>
+            <p className="b1 text-neutral-100 dark:text-neutral-900">
+              App Store
+            </p>
           </div>
         </a>
       )}

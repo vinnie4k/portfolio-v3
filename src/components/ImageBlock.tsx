@@ -15,7 +15,11 @@ export default function ImageBlock({ imageSrc, imageAlt, caption }: props) {
         placeholder="empty"
         className="object-contain"
       />
-      {caption && <p className="b2 text-neutral-600 text-center">{caption}</p>}
+      {caption && (
+        <p className="b2 text-neutral-600 dark:text-neutral-400 text-center">
+          {caption}
+        </p>
+      )}
     </div>
   );
 }

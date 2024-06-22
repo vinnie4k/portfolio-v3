@@ -15,7 +15,8 @@ const config: Config = {
       },
       colors: {
         custom: {
-          navbar: "rgba(248, 249, 250, 0.48)",
+          navbarLight: "rgba(253, 249, 242, 0.48)",
+          navbarDark: "rgba(34, 39, 36, 0.48)",
         },
         neutral: {
           100: "#F8F9FA",
