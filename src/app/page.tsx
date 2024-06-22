@@ -7,10 +7,14 @@ export default function Work() {
       {/* Hero */}
       <div className="flex flex-col gap-6 text-center">
         <div className="flex flex-col gap-1">
-          <h1 className="text-neutral-900">Hi. I'm Vin.</h1>
-          <h1 className="text-neutral-900">Developer & Engineer.</h1>
+          <h1 className="text-neutral-900 dark:text-neutral-100">
+            Hi. I'm Vin.
+          </h1>
+          <h1 className="text-neutral-900 dark:text-neutral-100">
+            Developer & Engineer.
+          </h1>
         </div>
-        <p className="s2 text-neutral-600">
+        <p className="s2 text-neutral-600 dark:text-neutral-400">
           A driven creator and technologist, constantly seeking to elevate user
           experiences through innovative solutions and cutting-edge development.
         </p>

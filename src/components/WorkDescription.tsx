@@ -16,10 +16,13 @@ export default function WorkDescription({
       <div className="flex flex-row gap-8">
         {/* Role */}
         <div className="flex flex-col gap-2 w-[136px]">
-          <p className="label text-neutral-600">ROLE</p>
+          <p className="label text-neutral-600 dark:text-neutral-400">ROLE</p>
           <div>
             {roles.map((text, idx) => (
-              <p key={idx} className="b1 font-medium">
+              <p
+                key={idx}
+                className="b1 font-medium text-neutral-900 dark:text-neutral-100"
+              >
                 {text}
               </p>
             ))}
@@ -28,10 +31,15 @@ export default function WorkDescription({
 
         {/* Timeline */}
         <div className="flex flex-col gap-2 w-[136px]">
-          <p className="label text-neutral-600">TIMELINE</p>
+          <p className="label text-neutral-600 dark:text-neutral-400">
+            TIMELINE
+          </p>
           <div>
             {timeline.map((text, idx) => (
-              <p key={idx} className="b1 font-medium">
+              <p
+                key={idx}
+                className="b1 font-medium text-neutral-900 dark:text-neutral-100"
+              >
                 {text}
               </p>
             ))}
@@ -41,10 +49,15 @@ export default function WorkDescription({
       <div className="flex flex-row gap-8">
         {/* Frontend */}
         <div className="flex flex-col gap-2 w-[136px]">
-          <p className="label text-neutral-600">FRONTEND</p>
+          <p className="label text-neutral-600 dark:text-neutral-400">
+            FRONTEND
+          </p>
           <div>
             {frontend.map((text, idx) => (
-              <p key={idx} className="b1 font-medium">
+              <p
+                key={idx}
+                className="b1 font-medium text-neutral-900 dark:text-neutral-100"
+              >
                 {text}
               </p>
             ))}
@@ -53,10 +66,15 @@ export default function WorkDescription({
 
         {/* Backend */}
         <div className="flex flex-col gap-2 w-[136px]">
-          <p className="label text-neutral-600">BACKEND</p>
+          <p className="label text-neutral-600 dark:text-neutral-400">
+            BACKEND
+          </p>
           <div>
             {backend.map((text, idx) => (
-              <p key={idx} className="b1 font-medium">
+              <p
+                key={idx}
+                className="b1 font-medium text-neutral-900 dark:text-neutral-100"
+              >
                 {text}
               </p>
             ))}

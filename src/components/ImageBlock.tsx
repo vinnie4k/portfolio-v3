@@ -12,7 +12,7 @@ export default function ImageBlock({ imageSrc, imageAlt, caption }: props) {
       <Image
         src={imageSrc}
         alt={imageAlt}
-        placeholder="blur"
+        placeholder="empty"
         className="object-contain"
       />
       {caption && <p className="b2 text-neutral-600 text-center">{caption}</p>}

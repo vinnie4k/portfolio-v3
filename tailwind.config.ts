@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "selector",
   theme: {
     extend: {
       fontFamily: {
@@ -13,6 +14,9 @@ const config: Config = {
         tthovespro: ["var(--font-tthovespro)"],
       },
       colors: {
+        custom: {
+          navbar: "rgba(248, 249, 250, 0.48)",
+        },
         neutral: {
           100: "#F8F9FA",
           200: "#E9ECEF",
