@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import FooterMessage from "@/components/FooterMessage";
 import FooterBar from "@/components/FooterBar";
+import NavBar from "@/components/NavBar";
 
 // Fonts
 const cooperBT = localFont({
@@ -59,6 +60,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cooperBT.variable} ${ttHovesPro.variable} container`}>
+        {/* Header */}
+        <NavBar />
+
         {children}
 
         {/* Footer */}

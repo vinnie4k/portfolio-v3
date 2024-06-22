@@ -23,7 +23,7 @@ export default function BlogFeaturedCell({
   readTime,
 }: props) {
   return (
-    <Link href={link} className="flex flex-col gap-4 animate-opacity">
+    <a href={link} className="flex flex-col gap-4 animate-opacity">
       {/* Image */}
       <div className="relative h-[200px] rounded-[12px] overflow-hidden">
         <Image
@@ -45,6 +45,6 @@ export default function BlogFeaturedCell({
           <p className="label text-neutral-600">{readTime}</p>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }
