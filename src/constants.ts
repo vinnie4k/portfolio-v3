@@ -13,3 +13,9 @@ export enum Experience {
   Llounge,
   AppDev,
 }
+
+export interface IconProps {
+  width: number;
+  height?: number;
+  className?: string;
+}

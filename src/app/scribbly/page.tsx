@@ -6,13 +6,13 @@ import WorkFeatureCell from "@/components/WorkFeatureCell";
 import scribblyMain from "../../../public/scribbly/scribbly-main.png";
 import scribbly1 from "../../../public/scribbly/scribbly-1.png";
 import scribbly2 from "../../../public/scribbly/scribbly-2.png";
-import bellIcon from "../../../public/icons/bell.svg";
-import peopleIcon from "../../../public/icons/people.svg";
-import medalIcon from "../../../public/icons/medal.svg";
-import galleryIcon from "../../../public/icons/gallery.svg";
 import ImageBlock from "@/components/ImageBlock";
 import LinksCell from "@/components/LinksCell";
 import NextCell from "@/components/NextCell";
+import PeopleIcon from "@/icons/PeopleIcon";
+import GalleryIcon from "@/icons/GalleryIcon";
+import MedalIcon from "@/icons/MedalIcon";
+import BellIcon from "@/icons/BellIcon";
 
 export default function Scribbly() {
   return (
@@ -63,28 +63,24 @@ export default function Scribbly() {
         {/* Features */}
         <div className="flex flex-col gap-6">
           <WorkFeatureCell
-            icon={bellIcon}
-            iconAlt="Bell Icon"
+            icon={<BellIcon width={28} className="fill-neutral-900" />}
             title="Notifications"
             description="Staying engaged is key to artistic growth. Notifications alert users when friends interact with their artwork or when a new daily prompt is available, encouraging consistent participation and fostering a sense of connection."
           />
           <WorkFeatureCell
-            icon={peopleIcon}
-            iconAlt="People Icon"
+            icon={<PeopleIcon width={28} className="fill-neutral-900" />}
             title="Creative Circle"
             description={
               'Building a supportive network is at the heart of Scribbly\'s mission. The "Friends" feature allows users to connect with other artists, share their work, exchange feedback, and hold each other accountable for daily practice.'
             }
           />
           <WorkFeatureCell
-            icon={medalIcon}
-            iconAlt="Medal Icon"
+            icon={<MedalIcon width={28} className="fill-neutral-900" />}
             title="Art Challenges"
             description="Scribbly's ever-changing pool of prompts sparks creativity and prevents stagnation. From drawing everyday objects to exploring abstract concepts, these prompts challenge users to step outside their comfort zones and discover new artistic possibilities."
           />
           <WorkFeatureCell
-            icon={galleryIcon}
-            iconAlt="Gallery Icon"
+            icon={<GalleryIcon width={28} className="stroke-neutral-900" />}
             title="Personal Gallery"
             description={
               "Witnessing progress is incredibly motivating. Scribbly's \"Journal\" feature serves as a personalized art gallery, showcasing a user's artistic evolution over time. This visual record of growth inspires continued practice and reinforces the value of daily dedication."

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import githubIcon from "../../public/icons/github-lt.svg";
-import globeIcon from "../../public/icons/globe-lt.svg";
 import appstoreIcon from "../../public/icons/appstore.png";
 import playstoreIcon from "../../public/icons/playstore.png";
+import GitHubIcon from "@/icons/GitHubIcon";
+import GlobeIcon from "@/icons/GlobeIcon";
 
 interface props {
   github: string;
@@ -38,7 +38,7 @@ export default function LinksCell({
         className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
       >
         <div className="flex flex-col gap-2 items-center">
-          <Image src={githubIcon} alt="GitHub Icon" width={36} />
+          <GitHubIcon width={36} className="fill-neutral-100" />
           <p className="b1 text-neutral-100">GitHub</p>
         </div>
       </a>
@@ -50,7 +50,7 @@ export default function LinksCell({
           className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
-            <Image src={globeIcon} alt="Website Icon" width={36} />
+            <GlobeIcon width={36} className="fill-neutral-100" />
             <p className="b1 text-neutral-100">Website</p>
           </div>
         </a>

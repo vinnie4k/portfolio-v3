@@ -59,7 +59,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cooperBT.variable} ${ttHovesPro.variable} container`}>
+      <body
+        className={`dark ${cooperBT.variable} ${ttHovesPro.variable} container`}
+      >
         {/* Header */}
         <NavBar />
 

@@ -17,7 +17,7 @@ export default function NavBar() {
   const isBlog = pathname.startsWith("/blog");
 
   return (
-    <div className="fixed top-8 z-10 w-full hero-container">
+    <div className="fixed top-8 z-10 w-full mx-[-16px] px-[16px]">
       <div className="flex flex-row justify-between items-center bg-custom-navbar backdrop-blur-lg py-3 px-4 rounded-[24px]">
         <a href="/">
           <p

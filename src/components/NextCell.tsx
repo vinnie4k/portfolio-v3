@@ -1,7 +1,6 @@
-import Image from "next/image";
+import ArrowLeft from "@/icons/ArrowLeft";
+import ArrowRight from "@/icons/ArrowRight";
 import Link from "next/link";
-import leftArrowIcon from "../../public/icons/arrow-left.svg";
-import rightArrowIcon from "../../public/icons/arrow-right.svg";
 
 interface props {
   prevText: string;
@@ -22,14 +21,14 @@ export default function NextCell({
         href={prevLink}
         className="flex flex-col items-start animate-underline underline-offset-[8px] hover:underline-offset-[12px]"
       >
-        <Image src={leftArrowIcon} alt="Left Arrow Icon" width={32} />
+        <ArrowLeft width={32} className="stroke-neutral-800" />
         <h3 className="text-neutral-800">{prevText}</h3>
       </Link>
       <Link
         href={nextLink}
         className="flex flex-col items-end animate-underline underline-offset-[8px] hover:underline-offset-[12px]"
       >
-        <Image src={rightArrowIcon} alt="Right Arrow Icon" width={32} />
+        <ArrowRight width={32} className="stroke-neutral-800" />
         <h3 className="text-neutral-800">{nextText}</h3>
       </Link>
     </div>

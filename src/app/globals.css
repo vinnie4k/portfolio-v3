@@ -5,7 +5,7 @@
 @layer base {
   /* Universal */
   body {
-    @apply bg-secondary-300;
+    @apply bg-secondary-300 dark:bg-primary-900;
   }
 
   .container {
@@ -35,27 +35,27 @@
 
   /* Gradient */
   .grad-announcements {
-    @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1];
+    @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1] dark:from-[#114650] dark:to-[#426685];
   }
 
   .grad-uplift {
-    @apply bg-gradient-to-b from-[#FCE28B] to-[#FED13C];
+    @apply bg-gradient-to-b from-[#FCE28B] to-[#FED13C] dark:from-[#B8860B] dark:to-[#D49B0C];
   }
 
   .grad-status {
-    @apply bg-gradient-to-b from-[#7EECC8] to-[#589E87];
+    @apply bg-gradient-to-b from-[#7EECC8] to-[#589E87] dark:from-[#3D6E5E] dark:to-[#3A9376];
   }
 
   .grad-grabbit {
-    @apply bg-gradient-to-b from-[#E6E2FF] to-[#FFD1DC];
+    @apply bg-gradient-to-b from-[#E6E2FF] to-[#FFD1DC] dark:from-[#4C487A] dark:to-[#A65A66];
   }
 
   .grad-volume {
-    @apply bg-gradient-to-b from-[#FFC8B2] to-[#FF8453];
+    @apply bg-gradient-to-b from-[#FFC8B2] to-[#FF8453] dark:from-[#993300] dark:to-[#C14000];
   }
 
   .grad-scribbly {
-    @apply bg-gradient-to-b from-[#192024] to-[#334149];
+    @apply bg-gradient-to-b from-[#192024] to-[#334149] dark:from-[#192024] dark:to-[#334149];
   }
 
   /* Mobile */
