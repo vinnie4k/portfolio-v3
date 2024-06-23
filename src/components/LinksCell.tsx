@@ -1,8 +1,7 @@
-import Image from "next/image";
-import appstoreIcon from "../../public/icons/appstore.png";
-import playstoreIcon from "../../public/icons/playstore.png";
 import GitHubIcon from "@/icons/GitHubIcon";
 import GlobeIcon from "@/icons/GlobeIcon";
+import GooglePlayIcon from "@/icons/GooglePlayIcon";
+import AppStoreIcon from "@/icons/AppStoreIcon";
 
 interface props {
   github: string;
@@ -26,7 +25,10 @@ export default function LinksCell({
           className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
-            <Image src={playstoreIcon} alt="Play Store Icon" width={36} />
+            <GooglePlayIcon
+              width={36}
+              className="fill-neutral-100 dark:fill-neutral-900"
+            />
             <p className="b1 text-neutral-100 dark:text-neutral-900">
               Play Store
             </p>
@@ -71,7 +73,10 @@ export default function LinksCell({
           className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
-            <Image src={appstoreIcon} alt="AppStore Icon" width={36} />
+            <AppStoreIcon
+              width={36}
+              className="fill-neutral-100 dark:fill-neutral-900"
+            />
             <p className="b1 text-neutral-100 dark:text-neutral-900">
               App Store
             </p>
