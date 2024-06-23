@@ -18,7 +18,7 @@ export default function NavBar() {
 
   return (
     <div className="fixed top-8 z-10 w-full mx-[-16px] px-[16px]">
-      <div className="flex flex-row justify-between items-center bg-custom-navbarLight dark:bg-custom-navbarDark backdrop-blur-lg py-3 px-4 rounded-[24px]">
+      <div className="flex flex-row justify-between items-center bg-navbar-l dark:bg-navbar-d backdrop-blur-lg py-3 px-4 rounded-[24px]">
         <a href="/">
           <p
             className={`b2 font-medium text-neutral-900 dark:text-neutral-100 py-[6px] px-4 ${
