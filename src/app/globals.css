@@ -5,7 +5,7 @@
 @layer base {
   /* Universal */
   body {
-    @apply bg-secondary-300 dark:bg-primary-900;
+    @apply bg-secondary-300 dark:bg-primary-900 transition-colors duration-300;
   }
 
   .container {
@@ -34,7 +34,7 @@
   }
 
   .animate-footer-bar {
-    @apply transition-all ease-in-out duration-200 pt-2 cursor-pointer h-6 hover:h-10;
+    @apply transition-all ease-in-out duration-200 cursor-pointer pt-4 h-8 hover:pt-0;
   }
 
   .animate-footer-circle {
