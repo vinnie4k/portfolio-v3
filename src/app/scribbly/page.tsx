@@ -63,24 +63,44 @@ export default function Scribbly() {
         {/* Features */}
         <div className="flex flex-col gap-6">
           <WorkFeatureCell
-            icon={<BellIcon width={28} className="fill-neutral-900" />}
+            icon={
+              <BellIcon
+                width={28}
+                className="fill-neutral-900 dark:fill-neutral-100"
+              />
+            }
             title="Notifications"
             description="Staying engaged is key to artistic growth. Notifications alert users when friends interact with their artwork or when a new daily prompt is available, encouraging consistent participation and fostering a sense of connection."
           />
           <WorkFeatureCell
-            icon={<PeopleIcon width={28} className="fill-neutral-900" />}
+            icon={
+              <PeopleIcon
+                width={28}
+                className="fill-neutral-900 dark:fill-neutral-100"
+              />
+            }
             title="Creative Circle"
             description={
               'Building a supportive network is at the heart of Scribbly\'s mission. The "Friends" feature allows users to connect with other artists, share their work, exchange feedback, and hold each other accountable for daily practice.'
             }
           />
           <WorkFeatureCell
-            icon={<MedalIcon width={28} className="fill-neutral-900" />}
+            icon={
+              <MedalIcon
+                width={28}
+                className="fill-neutral-900 dark:fill-neutral-100"
+              />
+            }
             title="Art Challenges"
             description="Scribbly's ever-changing pool of prompts sparks creativity and prevents stagnation. From drawing everyday objects to exploring abstract concepts, these prompts challenge users to step outside their comfort zones and discover new artistic possibilities."
           />
           <WorkFeatureCell
-            icon={<GalleryIcon width={28} className="stroke-neutral-900" />}
+            icon={
+              <GalleryIcon
+                width={28}
+                className="stroke-neutral-900 dark:stroke-neutral-100"
+              />
+            }
             title="Personal Gallery"
             description={
               "Witnessing progress is incredibly motivating. Scribbly's \"Journal\" feature serves as a personalized art gallery, showcasing a user's artistic evolution over time. This visual record of growth inspires continued practice and reinforces the value of daily dedication."

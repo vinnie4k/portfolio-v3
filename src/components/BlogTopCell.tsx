@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 interface props {
   link: string;
@@ -37,12 +36,20 @@ export default function BlogTopCell({
 
       {/* Details */}
       <div className="flex flex-col gap-2">
-        <p className="b2 font-medium text-primary-700">{category}</p>
-        <h3 className="text-neutral-800">{title}</h3>
-        <p className="b1 text-neutral-700">{description}</p>
+        <p className="b2 font-medium text-primary-700 dark:text-secondary-300">
+          {category}
+        </p>
+        <h3 className="text-neutral-800 dark:text-neutral-200">{title}</h3>
+        <p className="b1 text-neutral-700 dark:text-neutral-300">
+          {description}
+        </p>
         <div className="flex flex-row gap-4">
-          <p className="b2 font-medium text-neutral-800">{date}</p>
-          <p className="b2 text-neutral-600">{readTime}</p>
+          <p className="b2 font-medium text-neutral-800 dark:text-neutral-200">
+            {date}
+          </p>
+          <p className="b2 text-neutral-600 dark:text-neutral-400">
+            {readTime}
+          </p>
         </div>
       </div>
     </a>

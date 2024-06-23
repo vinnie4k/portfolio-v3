@@ -11,9 +11,9 @@ export default function ({ width, height, className }: IconProps) {
     >
       <path
         d="M26.6693 63.9974H101.336M26.6693 63.9974L48.0026 85.3307M26.6693 63.9974L48.0026 42.6641"
-        stroke-width="16"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="16"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         fill="none"
       />
     </svg>

@@ -14,8 +14,9 @@ const config: Config = {
         tthovespro: ["var(--font-tthovespro)"],
       },
       colors: {
-        custom: {
-          navbar: "rgba(248, 249, 250, 0.48)",
+        navbar: {
+          l: "rgba(253, 249, 242, 0.48)",
+          d: "rgba(34, 39, 36, 0.48)",
         },
         neutral: {
           100: "#F8F9FA",

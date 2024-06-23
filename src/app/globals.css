@@ -33,6 +33,14 @@
     @apply transition-all ease-in-out duration-300 hover:translate-y-[-4px];
   }
 
+  .animate-footer-bar {
+    @apply transition-all ease-in-out duration-200 pt-2 cursor-pointer h-6 hover:h-10;
+  }
+
+  .animate-footer-circle {
+    @apply transition-all ease-in-out duration-200 data-[closed]:opacity-0 data-[closed]:translate-y-2;
+  }
+
   /* Gradient */
   .grad-announcements {
     @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1] dark:from-[#114650] dark:to-[#426685];
