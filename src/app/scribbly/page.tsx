@@ -1,7 +1,8 @@
+"use client";
+
 import WorkDescription from "@/components/WorkDescription";
 import TextBlock from "@/components/TextBlock";
 import WorkFeatureCell from "@/components/WorkFeatureCell";
-
 import scribblyMain from "../../../public/scribbly/scribbly-main.png";
 import scribbly1 from "../../../public/scribbly/scribbly-1.png";
 import scribbly2 from "../../../public/scribbly/scribbly-2.png";
@@ -12,6 +13,7 @@ import PeopleIcon from "@/icons/PeopleIcon";
 import GalleryIcon from "@/icons/GalleryIcon";
 import MedalIcon from "@/icons/MedalIcon";
 import BellIcon from "@/icons/BellIcon";
+import { motion } from "framer-motion";
 
 export default function Scribbly() {
   return (
@@ -20,21 +22,33 @@ export default function Scribbly() {
       <div className="h-[720px] md:h-[760px] lg:h-[840px] dark">
         <div className="flex flex-col gap-12 lg:gap-16 items-center hero-container grad-scribbly">
           {/* Heading */}
-          <div className="flex flex-col items-center gap-1 md:gap-2 lg:gap-4">
-            <h1 className="text-neutral-900 dark:text-neutral-100">Scribbly</h1>
-            <p className="s2 text-neutral-600 dark:text-neutral-400">
-              Your Daily Dose of Artistic Inspiration.
-            </p>
-          </div>
-          {/* Description */}
-          <WorkDescription
-            roles={["Developer"]}
-            timeline={["Winter 2023"]}
-            frontend={["UIKit"]}
-            backend={["Firebase"]}
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 48 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
+            className="flex flex-col gap-12 lg:gap-16 items-center"
+          >
+            <div className="flex flex-col items-center gap-1 md:gap-2 lg:gap-4">
+              <h1 className="text-neutral-900 dark:text-neutral-100">
+                Scribbly
+              </h1>
+              <p className="s2 text-neutral-600 dark:text-neutral-400">
+                Your Daily Dose of Artistic Inspiration.
+              </p>
+            </div>
+            {/* Description */}
+            <WorkDescription
+              roles={["Developer"]}
+              timeline={["Winter 2023"]}
+              frontend={["UIKit"]}
+              backend={["Firebase"]}
+            />
+          </motion.div>
           {/* Image */}
-          <img
+          <motion.img
+            initial={{ opacity: 0, y: 48 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             src={scribblyMain.src}
             alt="Image of the Scribbly project"
             className="max-h-[440px] md:max-h-[520px] object-contain"
@@ -43,7 +57,12 @@ export default function Scribbly() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col gap-12 lg:gap-20 items-center">
+      <motion.div
+        initial={{ opacity: 0, y: 48 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+        className="flex flex-col gap-12 lg:gap-20 items-center"
+      >
         <TextBlock
           heading="The Artist’s Dilemma"
           body={[
@@ -126,7 +145,7 @@ export default function Scribbly() {
 
         {/* Links */}
         <LinksCell github="https://github.com/vinnie4k/Scribbly" />
-      </div>
+      </motion.div>
 
       {/* Next */}
       <NextCell

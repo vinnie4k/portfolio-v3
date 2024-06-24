@@ -1,7 +1,10 @@
+"use client";
+
 import BlogTopCell from "@/components/BlogTopCell";
 import placeholderImg from "../../../public/placeholder.png";
 import BlogFeaturedCell from "@/components/BlogFeaturedCell";
 import BlogExploreCell from "@/components/BlogExploreCell";
+import { motion } from "framer-motion";
 
 export default function Blog() {
   return (
@@ -19,7 +22,12 @@ export default function Blog() {
       />
 
       {/* Featured */}
-      <div className="flex flex-col gap-4 lg:gap-6">
+      <motion.div
+        initial={{ opacity: 0, y: 48 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+        className="flex flex-col gap-4 lg:gap-6"
+      >
         <h2 className="text-neutral-900">Featured</h2>
         <div className="flex flex-col gap-12 md:flex-row md:gap-8 lg:gap-16">
           <BlogFeaturedCell
@@ -53,7 +61,7 @@ export default function Blog() {
             readTime="2 min read"
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Explore */}
       <div className="flex flex-col gap-4 lg:gap-6">

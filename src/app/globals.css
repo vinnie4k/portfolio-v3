@@ -41,14 +41,6 @@
     @apply transition-all ease-in-out duration-500 hover:translate-y-[-4px] hover:gap-6 md:hover:gap-12 md:hover:translate-y-[-8px] hover:shadow-lg;
   }
 
-  .animate-slide-down {
-    @apply transition-transform duration-[500ms] ease-out data-[closed]:opacity-0 data-[closed]:translate-y-[-36px];
-  }
-
-  .animate-slide-up {
-    @apply transition-transform duration-[500ms] ease-out data-[closed]:opacity-0 data-[closed]:translate-y-[36px];
-  }
-
   /* Gradient */
   .grad-announcements {
     @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1] dark:from-[#114650] dark:to-[#426685];

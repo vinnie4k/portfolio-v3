@@ -1,4 +1,6 @@
+"use client";
 import { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 interface props {
   link: string;
@@ -27,14 +29,22 @@ export default function BlogTopCell({
       className="flex flex-col gap-4 lg:gap-12 animate-opacity md:flex-row"
     >
       {/* Image */}
-      <img
+      <motion.img
+        initial={{ opacity: 0, y: 48 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
         src={imageSrc.src}
         alt={imageAlt}
         className="h-[320px] md:h-[200px] lg:h-[320px] lg:w-[480px] rounded-[12px] md:rounded-[16px] object-cover"
       />
 
       {/* Details */}
-      <div className="flex flex-col gap-2 lg:gap-4 md:justify-center">
+      <motion.div
+        initial={{ opacity: 0, y: 48 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+        className="flex flex-col gap-2 lg:gap-4 md:justify-center"
+      >
         <p className="b2 font-medium text-primary-700 dark:text-secondary-300">
           {category}
         </p>
@@ -50,7 +60,7 @@ export default function BlogTopCell({
             {readTime}
           </p>
         </div>
-      </div>
+      </motion.div>
     </a>
   );
 }
