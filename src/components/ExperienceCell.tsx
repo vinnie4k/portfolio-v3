@@ -1,4 +1,3 @@
-import Image from "next/image";
 import placeholderImg from "../../public/placeholder.png";
 import glassdoorImg from "../../public/about/glassdoor.png";
 import terraImg from "../../public/about/terra.png";
@@ -16,6 +15,7 @@ export default function ExperienceCell({ experience }: props) {
   let year = "";
   let imageSrc = placeholderImg;
   let imageAlt = "";
+  let style = "";
 
   switch (experience) {
     case Experience.Glassdoor: {
@@ -24,6 +24,7 @@ export default function ExperienceCell({ experience }: props) {
       year = "2024~";
       imageSrc = glassdoorImg;
       imageAlt = "Glassdoor Logo";
+      style = "md:absolute md:top-0 md:left-[60%] md:right-0";
       break;
     }
     case Experience.Terra: {
@@ -32,6 +33,8 @@ export default function ExperienceCell({ experience }: props) {
       year = "2024~";
       imageSrc = terraImg;
       imageAlt = "Terra Logo";
+      style =
+        "md:absolute md:top-[72px] lg:top-[88px] md:left-[50%] md:right-0";
       break;
     }
     case Experience.Llounge: {
@@ -40,6 +43,8 @@ export default function ExperienceCell({ experience }: props) {
       year = "2023";
       imageSrc = lloungeImg;
       imageAlt = "llounge Logo";
+      style =
+        "md:absolute md:top-[144px] lg:top-[176px] md:left-[20%] md:right-[40%]";
       break;
     }
     case Experience.AppDev: {
@@ -48,19 +53,18 @@ export default function ExperienceCell({ experience }: props) {
       year = "2023-24";
       imageSrc = appdevImg;
       imageAlt = "Cornell AppDev Logo";
+      style =
+        "md:absolute md:top-[216px] lg:top-[264px] md:left-0 md:right-[25%]";
       break;
     }
   }
 
   return (
-    <div className="flex flex-row justify-between items-center bg-primary-200 dark:bg-primary-800 py-3 px-6 rounded-[48px]">
+    <div
+      className={`flex flex-row justify-between items-center bg-primary-200 dark:bg-primary-800 py-3 md:py-2 lg:py-3 px-6 md:px-3 lg:px-6 rounded-[48px] ${style}`}
+    >
       <div className="flex flex-row gap-3 items-center">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={32}
-          className="rounded-[16px]"
-        />
+        <img src={imageSrc.src} alt={imageAlt} className="rounded-[16px] w-8" />
         <div className="flex flex-col">
           <p className="b1 font-medium text-neutral-900 dark:text-neutral-100">
             {company}

@@ -1,6 +1,4 @@
 import { Project } from "@/constants";
-import Image from "next/image";
-
 import placeholderImg from "../../public/placeholder.png";
 import announcementsImg from "../../public/announcements/announcements-main.png";
 import upliftImg from "../../public/uplift/uplift-main.png";
@@ -14,73 +12,82 @@ interface props {
 }
 
 export default function WorkCell({ project }: props) {
+  let src = "";
   let subtitle = "";
   let title = "";
   let imageSrc = placeholderImg;
   let imageAlt = "";
   let gradient = "";
-  let imageWidth = 0;
+  let imageStyle = "";
 
   switch (project) {
     case Project.Announcements: {
+      src = "/announcements";
       subtitle = "Web App";
       title = "Announcements";
       imageSrc = announcementsImg;
       imageAlt = "Image of the Announcements project";
       gradient = "grad-announcements";
-      imageWidth = 324;
+      imageStyle = "w-[324px] md:w-[568px] lg:w-[720px] mx-auto";
       break;
     }
     case Project.Uplift: {
+      src = "/uplift";
       subtitle = "Mobile App";
       title = "Uplift";
       imageSrc = upliftImg;
       imageAlt = "Image of the Uplift project";
       gradient = "grad-uplift";
-      imageWidth = 160;
+      imageStyle = "w-[160px] md:w-[320px] lg:w-[400px] mx-auto";
       break;
     }
     case Project.Status: {
+      src = "/status";
       subtitle = "Web App";
       title = "Status Platform";
       imageSrc = statusImg;
       imageAlt = "Image of the Status Platform project";
       gradient = "grad-status";
-      imageWidth = 324;
+      imageStyle = "w-[324px] md:w-[568px] lg:w-[720px] mx-auto";
       break;
     }
     case Project.Grabbit: {
+      src = "/grabbit";
       subtitle = "Mobile App";
       title = "Grabbit";
       imageSrc = grabbitImg;
       imageAlt = "Image of the Grabbit project";
       gradient = "grad-grabbit";
-      imageWidth = 240;
+      imageStyle = "w-[240px] md:w-[448px] lg:w-[560px] mx-auto";
       break;
     }
     case Project.Volume: {
+      src = "/volume";
       subtitle = "Mobile App";
       title = "Volume";
       imageSrc = volumeImg;
       imageAlt = "Image of the Volume project";
       gradient = "grad-volume";
-      imageWidth = 240;
+      imageStyle = "w-[240px] md:w-[448px] lg:w-[560px] mx-auto";
       break;
     }
     case Project.Scribbly: {
+      src = "/scribbly";
       subtitle = "Mobile App";
       title = "Scribbly";
       imageSrc = scribblyImg;
       imageAlt = "Image of the Scribbly project";
       gradient = "grad-scribbly";
-      imageWidth = 160;
+      imageStyle =
+        "w-[160px] md:w-[320px] lg:w-[400px] mx-auto translate-y-[-16px] md:translate-y-[-40px] lg:translate-y-[-64px]";
       break;
     }
   }
 
   return (
-    <div
-      className={`${gradient} flex flex-col gap-4 p-6 pb-0 rounded-[16px] h-[320px] ${
+    <a
+      href={src}
+      className={`${gradient} flex flex-col gap-4 md:gap-8 p-6 md:p-12 pb-0 md:pb-0 rounded-[16px] md:rounded-[24px] h-[320px] md:h-[560px] lg:h-[624px] animate-work-cell overflow-hidden ${
         project === Project.Scribbly && "dark"
       }`}
     >
@@ -88,15 +95,7 @@ export default function WorkCell({ project }: props) {
         <p className="b1 text-neutral-700 dark:text-neutral-300">{subtitle}</p>
         <h3 className="text-neutral-900 dark:text-neutral-100">{title}</h3>
       </div>
-      <div className="overflow-hidden">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={imageWidth}
-          placeholder="empty"
-          className="mx-auto"
-        />
-      </div>
-    </div>
+      <img src={imageSrc.src} alt={imageAlt} className={imageStyle} />
+    </a>
   );
 }

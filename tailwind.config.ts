@@ -8,6 +8,13 @@ const config: Config = {
   ],
   darkMode: "selector",
   theme: {
+    screens: {
+      sm: "0px",
+      md: "768px",
+      lg: "1280px",
+      xl: "1280px",
+      "2xl": "1280px",
+    },
     extend: {
       fontFamily: {
         cooperbt: ["var(--font-cooperbt)"],

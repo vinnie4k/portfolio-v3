@@ -18,7 +18,11 @@ export default function FooterBar() {
 
   // Render
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-6 md:flex-row md:items-end md:justify-between">
+      <p className="b2 text-neutral-600 dark:text-neutral-400 max-md:hidden">
+        Designed and developed by Vin © 2024
+      </p>
+
       {/* Toggle */}
       <div className="flex flex-col gap-3 justify-end h-[84px]">
         {/* Circle */}
@@ -29,9 +33,9 @@ export default function FooterBar() {
             }`}
           >
             {isDark ? (
-              <MoonIcon width={16} className="dark:stroke-neutral-900" />
+              <MoonIcon className="dark:stroke-neutral-900 w-4" />
             ) : (
-              <SunIcon width={16} className="stroke-neutral-100" />
+              <SunIcon className="stroke-neutral-100 w-4" />
             )}
           </div>
         </Transition>
@@ -80,28 +84,19 @@ export default function FooterBar() {
         </div>
       </div>
 
-      <p className="b2 text-neutral-600 dark:text-neutral-400">
+      <p className="b2 text-neutral-600 dark:text-neutral-400 md:hidden">
         Designed and developed by Vin © 2024
       </p>
 
-      <div className="flex flex-row gap-8">
+      <div className="flex flex-row gap-8 md:gap-[56px] lg:gap-[72px]">
         <a href="https://github.com/vinnie4k" target="_blank">
-          <GitHubIcon
-            width={20}
-            className="fill-neutral-900 dark:fill-neutral-100"
-          />
+          <GitHubIcon className="fill-neutral-900 dark:fill-neutral-100 w-5" />
         </a>
         <a href="https://www.linkedin.com/in/vin-bui/" target="_blank">
-          <LinkedInIcon
-            width={20}
-            className="fill-neutral-900 dark:fill-neutral-100"
-          />
+          <LinkedInIcon className="fill-neutral-900 dark:fill-neutral-100 w-5" />
         </a>
         <a href="https://www.instagram.com/vin.bui/" target="_blank">
-          <InstagramIcon
-            width={20}
-            className="fill-neutral-900 dark:fill-neutral-100"
-          />
+          <InstagramIcon className="fill-neutral-900 dark:fill-neutral-100 w-5" />
         </a>
       </div>
     </div>

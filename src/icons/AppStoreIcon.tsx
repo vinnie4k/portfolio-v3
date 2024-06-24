@@ -1,10 +1,8 @@
 import { IconProps } from "@/constants";
 
-export default function ({ width, height, className }: IconProps) {
+export default function ({ className }: IconProps) {
   return (
     <svg
-      width={width}
-      height={height || width}
       viewBox="0 0 56 56"
       xmlns="http://www.w3.org/2000/svg"
       className={className}

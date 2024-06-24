@@ -1,5 +1,4 @@
 import WorkDescription from "@/components/WorkDescription";
-import Image from "next/image";
 import TextBlock from "@/components/TextBlock";
 import WorkFeatureCell from "@/components/WorkFeatureCell";
 
@@ -18,16 +17,15 @@ export default function Scribbly() {
   return (
     <>
       {/* Hero */}
-      <div className="h-[720px] dark">
-        <div className="flex flex-col gap-12 items-center hero-container grad-scribbly">
+      <div className="h-[720px] md:h-[760px] lg:h-[840px] dark">
+        <div className="flex flex-col gap-12 lg:gap-16 items-center hero-container grad-scribbly">
           {/* Heading */}
-          <div className="flex flex-col items-center marker:gap-1">
+          <div className="flex flex-col items-center gap-1 md:gap-2 lg:gap-4">
             <h1 className="text-neutral-900 dark:text-neutral-100">Scribbly</h1>
             <p className="s2 text-neutral-600 dark:text-neutral-400">
               Your Daily Dose of Artistic Inspiration.
             </p>
           </div>
-
           {/* Description */}
           <WorkDescription
             roles={["Developer"]}
@@ -36,17 +34,16 @@ export default function Scribbly() {
             backend={["Firebase"]}
           />
           {/* Image */}
-          <Image
-            src={scribblyMain}
+          <img
+            src={scribblyMain.src}
             alt="Image of the Scribbly project"
-            placeholder="empty"
-            className="object-contain"
+            className="max-h-[440px] md:max-h-[520px] object-contain"
           />
         </div>
       </div>
 
       {/* Content */}
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 lg:gap-20 items-center">
         <TextBlock
           heading="The Artist’s Dilemma"
           body={[
@@ -61,23 +58,17 @@ export default function Scribbly() {
         />
 
         {/* Features */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 lg:gap-8 lg:grid lg:grid-cols-2">
           <WorkFeatureCell
             icon={
-              <BellIcon
-                width={28}
-                className="fill-neutral-900 dark:fill-neutral-100"
-              />
+              <BellIcon className="fill-neutral-900 dark:fill-neutral-100 w-7 md:w-8 lg:w-9" />
             }
             title="Notifications"
             description="Staying engaged is key to artistic growth. Notifications alert users when friends interact with their artwork or when a new daily prompt is available, encouraging consistent participation and fostering a sense of connection."
           />
           <WorkFeatureCell
             icon={
-              <PeopleIcon
-                width={28}
-                className="fill-neutral-900 dark:fill-neutral-100"
-              />
+              <PeopleIcon className="fill-neutral-900 dark:fill-neutral-100 w-7 md:w-8 lg:w-9" />
             }
             title="Creative Circle"
             description={
@@ -86,20 +77,14 @@ export default function Scribbly() {
           />
           <WorkFeatureCell
             icon={
-              <MedalIcon
-                width={28}
-                className="fill-neutral-900 dark:fill-neutral-100"
-              />
+              <MedalIcon className="fill-neutral-900 dark:fill-neutral-100 w-7 md:w-8 lg:w-9" />
             }
             title="Art Challenges"
             description="Scribbly's ever-changing pool of prompts sparks creativity and prevents stagnation. From drawing everyday objects to exploring abstract concepts, these prompts challenge users to step outside their comfort zones and discover new artistic possibilities."
           />
           <WorkFeatureCell
             icon={
-              <GalleryIcon
-                width={28}
-                className="stroke-neutral-900 dark:stroke-neutral-100"
-              />
+              <GalleryIcon className="stroke-neutral-900 dark:stroke-neutral-100 w-7 md:w-8 lg:w-9" />
             }
             title="Personal Gallery"
             description={
@@ -111,11 +96,13 @@ export default function Scribbly() {
         <ImageBlock
           imageSrc={scribbly1}
           imageAlt="Draw a new prompt every day (left) and explore what others drew (right)."
+          imageStyle="md:max-w-[600px]"
           caption="☝🏻 Draw a new prompt every day (left) and explore what others drew (right)."
         />
         <ImageBlock
           imageSrc={scribbly2}
           imageAlt="Comment on other artwork (left) and view your own personalized art gallery (right)."
+          imageStyle="md:max-w-[600px]"
           caption="☝🏻 Comment on other artwork (left) and view your own personalized art gallery (right)."
         />
         <TextBlock

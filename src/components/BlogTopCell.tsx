@@ -1,8 +1,8 @@
-import Image from "next/image";
+import { StaticImageData } from "next/image";
 
 interface props {
   link: string;
-  imageSrc: any;
+  imageSrc: StaticImageData;
   imageAlt: string;
   category: string;
   title: string;
@@ -22,25 +22,24 @@ export default function BlogTopCell({
   readTime,
 }: props) {
   return (
-    <a href={link} className="flex flex-col gap-4 animate-opacity">
+    <a
+      href={link}
+      className="flex flex-col gap-4 lg:gap-12 animate-opacity md:flex-row"
+    >
       {/* Image */}
-      <div className="relative h-[320px] rounded-[12px] overflow-hidden">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          placeholder="empty"
-          className="object-cover"
-          fill
-        />
-      </div>
+      <img
+        src={imageSrc.src}
+        alt={imageAlt}
+        className="h-[320px] md:h-[200px] lg:h-[320px] lg:w-[480px] rounded-[12px] md:rounded-[16px] object-cover"
+      />
 
       {/* Details */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 lg:gap-4 md:justify-center">
         <p className="b2 font-medium text-primary-700 dark:text-secondary-300">
           {category}
         </p>
         <h3 className="text-neutral-800 dark:text-neutral-200">{title}</h3>
-        <p className="b1 text-neutral-700 dark:text-neutral-300">
+        <p className="b1 text-neutral-700 dark:text-neutral-300 md:line-clamp-4 max-lg:line-clamp-6">
           {description}
         </p>
         <div className="flex flex-row gap-4">
