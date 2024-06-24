@@ -4,10 +4,6 @@
 
 @layer base {
   /* Universal */
-  body {
-    @apply bg-secondary-300 dark:bg-primary-900 transition-colors duration-300;
-  }
-
   .hero-container {
     @apply mx-[-16px] md:mx-[-32px] lg:mx-[calc(-1*(100vw-1128px)/2)] mt-[-120px] pt-[120px] lg:mt-[-160px] lg:pt-[160px] h-full;
   }

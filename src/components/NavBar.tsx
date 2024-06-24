@@ -46,11 +46,9 @@ export default function NavBar() {
         initial={{ opacity: 0, y: -36 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.5 }}
-        className={`${
+        className={`transition-colors duration-300 max-md:hidden fixed w-full z-10 py-6 px-8 lg:px-[calc((100vw-1128px)/2)] flex flex-row justify-between items-center ${
           pathname === "/scribbly" && "dark"
-        } max-md:hidden fixed w-full z-10 py-6 px-8 lg:px-[calc((100vw-1128px)/2)] flex flex-row justify-between items-center ${
-          hasScrolled && backgroundColor
-        }`}
+        } ${hasScrolled && backgroundColor}`}
       >
         <div className="flex flex-row gap-8 lg:gap-12">
           <a href="/">
