@@ -90,13 +90,13 @@ export default function FooterBar() {
 
       <div className="flex flex-row gap-8 md:gap-[56px] lg:gap-[72px]">
         <a href="https://github.com/vinnie4k" target="_blank">
-          <GitHubIcon className="fill-neutral-900 dark:fill-neutral-100 w-5" />
+          <GitHubIcon className="fill-neutral-900 dark:fill-neutral-100 w-5 animate-opacity" />
         </a>
         <a href="https://www.linkedin.com/in/vin-bui/" target="_blank">
-          <LinkedInIcon className="fill-neutral-900 dark:fill-neutral-100 w-5" />
+          <LinkedInIcon className="fill-neutral-900 dark:fill-neutral-100 w-5 animate-opacity" />
         </a>
         <a href="https://www.instagram.com/vin.bui/" target="_blank">
-          <InstagramIcon className="fill-neutral-900 dark:fill-neutral-100 w-5" />
+          <InstagramIcon className="fill-neutral-900 dark:fill-neutral-100 w-5 animate-opacity" />
         </a>
       </div>
     </div>

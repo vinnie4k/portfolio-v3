@@ -25,7 +25,7 @@
     @apply transition-all ease-in-out duration-300 underline decoration-primary-500 decoration-2;
   }
 
-  .animate-up {
+  .animate-hover-up {
     @apply transition-all ease-in-out duration-300 hover:translate-y-[-4px];
   }
 
@@ -39,6 +39,14 @@
 
   .animate-work-cell {
     @apply transition-all ease-in-out duration-500 hover:translate-y-[-4px] hover:gap-6 md:hover:gap-12 md:hover:translate-y-[-8px] hover:shadow-lg;
+  }
+
+  .animate-slide-down {
+    @apply transition-transform duration-[500ms] ease-out data-[closed]:opacity-0 data-[closed]:translate-y-[-36px];
+  }
+
+  .animate-slide-up {
+    @apply transition-transform duration-[500ms] ease-out data-[closed]:opacity-0 data-[closed]:translate-y-[36px];
   }
 
   /* Gradient */
