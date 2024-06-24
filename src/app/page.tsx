@@ -1,34 +1,73 @@
+"use client";
+
+import HeroBubbles from "@/components/HeroBubbles";
+import HeroWave from "@/components/HeroWave";
 import WorkCell from "@/components/WorkCell";
 import { Project } from "@/constants";
+import { motion } from "framer-motion";
 
 export default function Work() {
   return (
     <>
       {/* Hero */}
-      <div className="flex flex-col mx-auto gap-6 lg:gap-8 text-center md:w-[513px] lg:w-[683px]">
-        <div className="flex flex-col gap-1">
-          <h1 className="text-neutral-900 dark:text-neutral-100">
-            Hi. I'm Vin.
-          </h1>
-          <h1 className="text-neutral-900 dark:text-neutral-100">
-            Developer & Engineer.
-          </h1>
+      <div className="relative flex flex-col justify-center h-[560px] md:h-[610px]">
+        <div className="flex flex-col mx-auto gap-6 lg:gap-8 text-center md:w-[513px] lg:w-[683px]">
+          <motion.div
+            initial={{ opacity: 0, y: 48 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
+            className="flex flex-col gap-1"
+          >
+            <h1 className="text-neutral-900 dark:text-neutral-100">
+              Hi. I'm Vin.
+            </h1>
+            <h1 className="text-neutral-900 dark:text-neutral-100">
+              Developer & Engineer.
+            </h1>
+          </motion.div>
+          <motion.p
+            initial={{ opacity: 0, y: 48 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+            className="s2 text-neutral-600 dark:text-neutral-400"
+          >
+            A driven creator and technologist, constantly seeking to elevate
+            user experiences through innovative solutions and cutting-edge
+            development.
+          </motion.p>
         </div>
-        <p className="s2 text-neutral-600 dark:text-neutral-400">
-          A driven creator and technologist, constantly seeking to elevate user
-          experiences through innovative solutions and cutting-edge development.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 48 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+          className="absolute left-0 bottom-0"
+        >
+          <HeroBubbles />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 48 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+          className="absolute right-0 top-0"
+        >
+          <HeroWave />
+        </motion.div>
       </div>
 
       {/* Work */}
-      <div className="flex flex-col gap-8 md:gap-12">
+      <motion.div
+        initial={{ opacity: 0, y: 48 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
+        className="flex flex-col gap-8 md:gap-12"
+      >
         <WorkCell project={Project.Announcements} />
         <WorkCell project={Project.Uplift} />
         <WorkCell project={Project.Status} />
         <WorkCell project={Project.Grabbit} />
         <WorkCell project={Project.Volume} />
         <WorkCell project={Project.Scribbly} />
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -81,8 +81,7 @@ export default function WorkCell({ project }: props) {
       imageSrc = scribblyImg;
       imageAlt = "Image of the Scribbly project";
       gradient = "grad-scribbly";
-      imageStyle =
-        "w-[160px] md:w-[320px] lg:w-[400px] m-auto absolute left-0 right-0 top-0 bottom-0";
+      imageStyle = "w-[160px] md:w-[320px] lg:w-[400px] mx-auto";
       break;
     }
   }
@@ -90,8 +89,10 @@ export default function WorkCell({ project }: props) {
   return (
     <a
       href={src}
-      className={`${gradient} flex flex-col gap-4 md:gap-8 p-6 md:p-12 pb-0 md:pb-0 rounded-[16px] md:rounded-[24px] h-[320px] md:h-[560px] lg:h-[624px] animate-work-cell overflow-hidden ${
-        project === Project.Scribbly && "dark relative"
+      className={`${gradient} flex flex-col p-6 md:p-12 pb-0 md:pb-0 rounded-[16px] md:rounded-[24px] h-[320px] md:h-[560px] lg:h-[624px] animate-work-cell overflow-hidden ${
+        project === Project.Scribbly
+          ? "dark gap-0 hover:gap-2 md:hover:gap-4"
+          : "gap-4 md:gap-8"
       }`}
     >
       <div className="flex flex-col gap-1 text-end">
