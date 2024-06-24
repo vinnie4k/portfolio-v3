@@ -5,7 +5,7 @@ export default function Work() {
   return (
     <>
       {/* Hero */}
-      <div className="flex flex-col gap-6 text-center">
+      <div className="flex flex-col mx-auto gap-6 lg:gap-8 text-center md:w-[513px] lg:w-[683px]">
         <div className="flex flex-col gap-1">
           <h1 className="text-neutral-900 dark:text-neutral-100">
             Hi. I'm Vin.
@@ -21,7 +21,7 @@ export default function Work() {
       </div>
 
       {/* Work */}
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 md:gap-12">
         <WorkCell project={Project.Announcements} />
         <WorkCell project={Project.Uplift} />
         <WorkCell project={Project.Status} />

@@ -1,8 +1,7 @@
-import Image from "next/image";
-import appstoreIcon from "../../public/icons/appstore.png";
-import playstoreIcon from "../../public/icons/playstore.png";
 import GitHubIcon from "@/icons/GitHubIcon";
 import GlobeIcon from "@/icons/GlobeIcon";
+import GooglePlayIcon from "@/icons/GooglePlayIcon";
+import AppStoreIcon from "@/icons/AppStoreIcon";
 
 interface props {
   github: string;
@@ -18,7 +17,7 @@ export default function LinksCell({
   playstore,
 }: props) {
   return (
-    <div className="flex flex-row items-center justify-around bg-neutral-900 dark:bg-neutral-100 p-12 rounded-[24px]">
+    <div className="flex flex-row items-center justify-around w-full bg-neutral-900 dark:bg-neutral-100 max-md:p-12 rounded-[24px] md:w-[600px] md:py-16 md:justify-center md:gap-24">
       {playstore && (
         <a
           href={playstore}
@@ -26,7 +25,7 @@ export default function LinksCell({
           className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
-            <Image src={playstoreIcon} alt="Play Store Icon" width={36} />
+            <GooglePlayIcon className="fill-neutral-100 dark:fill-neutral-900 w-9 md:w-12 lg:w-14" />
             <p className="b1 text-neutral-100 dark:text-neutral-900">
               Play Store
             </p>
@@ -40,10 +39,7 @@ export default function LinksCell({
         className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
       >
         <div className="flex flex-col gap-2 items-center">
-          <GitHubIcon
-            width={36}
-            className="fill-neutral-100 dark:fill-neutral-900"
-          />
+          <GitHubIcon className="fill-neutral-100 dark:fill-neutral-900 w-9 md:w-12 lg:w-14" />
           <p className="b1 text-neutral-100 dark:text-neutral-900">GitHub</p>
         </div>
       </a>
@@ -55,10 +51,7 @@ export default function LinksCell({
           className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
-            <GlobeIcon
-              width={36}
-              className="fill-neutral-100 dark:fill-neutral-900"
-            />
+            <GlobeIcon className="fill-neutral-100 dark:fill-neutral-900 w-9 md:w-12 lg:w-14" />
             <p className="b1 text-neutral-100 dark:text-neutral-900">Website</p>
           </div>
         </a>
@@ -71,7 +64,7 @@ export default function LinksCell({
           className="animate-opacity-r animate-underline underline-offset-[6px] hover:underline-offset-[8px]"
         >
           <div className="flex flex-col gap-2 items-center">
-            <Image src={appstoreIcon} alt="AppStore Icon" width={36} />
+            <AppStoreIcon className="fill-neutral-100 dark:fill-neutral-900 w-9 md:w-12 lg:w-14" />
             <p className="b1 text-neutral-100 dark:text-neutral-900">
               App Store
             </p>

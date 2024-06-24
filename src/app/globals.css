@@ -5,15 +5,11 @@
 @layer base {
   /* Universal */
   body {
-    @apply bg-secondary-300 dark:bg-primary-900;
-  }
-
-  .container {
-    @apply flex flex-col gap-[120px] px-[16px] pt-[120px] pb-[60px];
+    @apply bg-secondary-300 dark:bg-primary-900 transition-colors duration-300;
   }
 
   .hero-container {
-    @apply mx-[-16px] px-4 mt-[-120px] pt-[120px] h-full;
+    @apply mx-[-16px] md:mx-[-32px] lg:mx-[calc(-1*(100vw-1128px)/2)] mt-[-120px] pt-[120px] lg:mt-[-160px] lg:pt-[160px] h-full;
   }
 
   /* Animations */
@@ -29,16 +25,28 @@
     @apply transition-all ease-in-out duration-300 underline decoration-primary-500 decoration-2;
   }
 
-  .animate-up {
+  .animate-hover-up {
     @apply transition-all ease-in-out duration-300 hover:translate-y-[-4px];
   }
 
   .animate-footer-bar {
-    @apply transition-all ease-in-out duration-200 pt-2 cursor-pointer h-6 hover:h-10;
+    @apply transition-all ease-in-out duration-200 cursor-pointer pt-4 h-8 hover:pt-0;
   }
 
   .animate-footer-circle {
     @apply transition-all ease-in-out duration-200 data-[closed]:opacity-0 data-[closed]:translate-y-2;
+  }
+
+  .animate-work-cell {
+    @apply transition-all ease-in-out duration-500 hover:translate-y-[-4px] hover:gap-6 md:hover:gap-12 md:hover:translate-y-[-8px] hover:shadow-lg;
+  }
+
+  .animate-slide-down {
+    @apply transition-transform duration-[500ms] ease-out data-[closed]:opacity-0 data-[closed]:translate-y-[-36px];
+  }
+
+  .animate-slide-up {
+    @apply transition-transform duration-[500ms] ease-out data-[closed]:opacity-0 data-[closed]:translate-y-[36px];
   }
 
   /* Gradient */

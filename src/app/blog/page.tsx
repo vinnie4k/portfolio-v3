@@ -19,9 +19,9 @@ export default function Blog() {
       />
 
       {/* Featured */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 lg:gap-6">
         <h2 className="text-neutral-900">Featured</h2>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-12 md:flex-row md:gap-8 lg:gap-16">
           <BlogFeaturedCell
             link="/blog/intro-to-ios/variables-and-constants"
             imageSrc={placeholderImg}
@@ -56,9 +56,9 @@ export default function Blog() {
       </div>
 
       {/* Explore */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 lg:gap-6">
         <h2 className="text-neutral-900">Explore</h2>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-12 md:gap-8 lg:gap-10">
           <BlogExploreCell
             link="/blog/intro-to-ios/variables-and-constants"
             imageSrc={placeholderImg}
