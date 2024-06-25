@@ -56,7 +56,7 @@ export default function NavBar() {
     <>
       {/* Tablet + Desktop */}
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: -36 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           ease: "easeOut",
