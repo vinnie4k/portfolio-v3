@@ -12,7 +12,7 @@ export default function About() {
         <div className="flex flex-col gap-12 md:flex-row lg:gap-24">
           {/* Image */}
           <motion.img
-            initial={{ opacity: 0, y: 48 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
             src={headshotImg.src}
@@ -22,7 +22,7 @@ export default function About() {
 
           {/* Description */}
           <motion.div
-            initial={{ opacity: 0, y: 48 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             className="flex flex-col gap-3 lg:gap-6"
@@ -48,7 +48,7 @@ export default function About() {
 
         {/* Experience */}
         <motion.div
-          initial={{ opacity: 0, y: 48 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
           className="flex flex-col gap-4 md:gap-0 md:relative md:h-[272px] lg:h-[336px]"

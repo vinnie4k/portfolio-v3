@@ -24,9 +24,13 @@ export default function Grabbit() {
         <div className="flex flex-col gap-12 lg:gap-16 items-center hero-container grad-grabbit">
           {/* Heading */}
           <motion.div
-            initial={{ opacity: 0, y: 48 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
+            transition={{
+              ease: "easeOut",
+              duration: 0.25,
+              delay: 0.5,
+            }}
             className="flex flex-col gap-12 lg:gap-16 items-center"
           >
             <div className="flex flex-col items-center gap-1 md:gap-2 lg:gap-4">
@@ -47,7 +51,7 @@ export default function Grabbit() {
           </motion.div>
           {/* Image */}
           <motion.img
-            initial={{ opacity: 0, y: 48 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             src={grabbitMain.src}
@@ -59,7 +63,7 @@ export default function Grabbit() {
 
       {/* Content */}
       <motion.div
-        initial={{ opacity: 0, y: 48 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
         className="flex flex-col gap-12 lg:gap-20 items-center"

@@ -13,7 +13,7 @@ export default function Work() {
       <div className="relative flex flex-col justify-center h-[560px] md:h-[610px]">
         <div className="flex flex-col mx-auto gap-6 lg:gap-8 text-center md:w-[513px] lg:w-[683px]">
           <motion.div
-            initial={{ opacity: 0, y: 48 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
             className="flex flex-col gap-1"
@@ -26,7 +26,7 @@ export default function Work() {
             </h1>
           </motion.div>
           <motion.p
-            initial={{ opacity: 0, y: 48 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             className="s2 text-neutral-600 dark:text-neutral-400"
@@ -37,7 +37,7 @@ export default function Work() {
           </motion.p>
         </div>
         <motion.div
-          initial={{ opacity: 0, y: 48 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
           className="absolute left-0 bottom-0"
@@ -45,7 +45,7 @@ export default function Work() {
           <HeroBubbles />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 48 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
           className="absolute right-0 top-0"
@@ -56,7 +56,7 @@ export default function Work() {
 
       {/* Work */}
       <motion.div
-        initial={{ opacity: 0, y: 48 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
         className="flex flex-col gap-8 md:gap-12"

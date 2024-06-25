@@ -10,13 +10,18 @@ export default function Blog() {
   // TODO: Uncomment when done
   return (
     <>
-      <div className="flex flex-col gap-4 items-center justify-center text-center h-[500px]">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
+        className="flex flex-col gap-4 items-center justify-center text-center h-[500px]"
+      >
         <h1 className="text-neutral-900 dark:text-neutral-100">Coming Soon</h1>
         <p className="b1 text-neutral-900 dark:text-neutral-100">
           This page is currently in development and will be available to view
           soon. Check back for updates!
         </p>
-      </div>
+      </motion.div>
     </>
   );
 
@@ -36,7 +41,7 @@ export default function Blog() {
 
       {/* Featured */}
       <motion.div
-        initial={{ opacity: 0, y: 48 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
         className="flex flex-col gap-4 lg:gap-6"

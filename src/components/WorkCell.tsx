@@ -90,9 +90,7 @@ export default function WorkCell({ project }: props) {
     <a
       href={src}
       className={`${gradient} flex flex-col p-6 md:p-12 pb-0 md:pb-0 rounded-[16px] md:rounded-[24px] h-[320px] md:h-[560px] lg:h-[624px] animate-work-cell overflow-hidden ${
-        project === Project.Scribbly
-          ? "dark gap-0 hover:gap-2 md:hover:gap-4"
-          : "gap-4 md:gap-8"
+        project === Project.Scribbly ? "dark gap-0" : "gap-4 md:gap-8"
       }`}
     >
       <div className="flex flex-col gap-1 text-end">
@@ -100,7 +98,7 @@ export default function WorkCell({ project }: props) {
         <h3 className="text-neutral-900 dark:text-neutral-100">{title}</h3>
       </div>
       <motion.img
-        initial={{ opacity: 0, y: 48 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.5 }}
         viewport={{ once: true }}
