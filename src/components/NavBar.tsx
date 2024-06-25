@@ -38,6 +38,9 @@ export default function NavBar() {
 
   // TODO: Uncomment and figure out dark mode
   let backgroundColor = "bg-secondary-300 dark:bg-primary-900";
+  if (pathname === "/scribbly") {
+    backgroundColor = "bg-secondary-300 dark:bg-primary-900";
+  }
   // if (pathname === "/announcements") {
   //   backgroundColor = "bg-[#84D4EE]";
   // } else if (pathname === "/uplift") {
@@ -64,7 +67,7 @@ export default function NavBar() {
           delay: 0.5,
         }}
         className={`transition-colors duration-300 max-md:hidden fixed w-full z-10 py-6 px-8 lg:px-[calc((100vw-1128px)/2)] flex flex-row justify-between items-center ${
-          pathname === "/scribbly" && "dark"
+          pathname === "/scribbly" && !hasScrolled && "dark"
         } ${hasScrolled && backgroundColor}`}
       >
         {/* Pages */}
@@ -105,16 +108,18 @@ export default function NavBar() {
         </div>
 
         {/* Logo */}
-        <img
-          src={logoLightImg.src}
-          alt="Vin Bui's Logo"
-          className="block dark:hidden absolute left-1/2 translate-x-[-16px] w-8 h-8"
-        />
-        <img
-          src={logoDarkImg.src}
-          alt="Vin Bui's Logo"
-          className="hidden dark:block absolute left-1/2 translate-x-[-16px] w-8 h-8"
-        />
+        <a href="/" className="absolute left-1/2 translate-x-[-16px] w-8 h-8">
+          <img
+            src={logoLightImg.src}
+            alt="Vin Bui's Logo"
+            className="block dark:hidden"
+          />
+          <img
+            src={logoDarkImg.src}
+            alt="Vin Bui's Logo"
+            className="hidden dark:block"
+          />
+        </a>
 
         {/* Links */}
         <div className="flex flex-row gap-14 lg:gap-[72px]">
