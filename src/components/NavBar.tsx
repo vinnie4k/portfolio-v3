@@ -38,9 +38,6 @@ export default function NavBar() {
 
   // TODO: Uncomment and figure out dark mode
   let backgroundColor = "bg-secondary-300 dark:bg-primary-900";
-  if (pathname === "/scribbly") {
-    backgroundColor = "bg-secondary-300 dark:bg-primary-900";
-  }
   // if (pathname === "/announcements") {
   //   backgroundColor = "bg-[#84D4EE]";
   // } else if (pathname === "/uplift") {
@@ -67,14 +64,14 @@ export default function NavBar() {
           delay: 0.5,
         }}
         className={`transition-colors duration-300 max-md:hidden fixed w-full z-10 py-6 px-8 lg:px-[calc((100vw-1128px)/2)] flex flex-row justify-between items-center ${
-          pathname === "/scribbly" && !hasScrolled && "dark"
-        } ${hasScrolled && backgroundColor}`}
+          hasScrolled && backgroundColor
+        }`}
       >
         {/* Pages */}
         <div className="flex flex-row gap-8 lg:gap-12">
           <a href="/">
             <p
-              className={`b2 text-neutral-900 dark:text-neutral-100 ${
+              className={`b2 text-neutral-900 dark:text-neutral-100 animate-opacity ${
                 isWork && selected
               }`}
             >
@@ -83,7 +80,7 @@ export default function NavBar() {
           </a>
           <a href="/blog">
             <p
-              className={`b2 text-neutral-900 dark:text-neutral-100 ${
+              className={`b2 text-neutral-900 dark:text-neutral-100 animate-opacity ${
                 isBlog && selected
               }`}
             >
@@ -92,7 +89,7 @@ export default function NavBar() {
           </a>
           <a href="/about">
             <p
-              className={`b2 text-neutral-900 dark:text-neutral-100 ${
+              className={`b2 text-neutral-900 dark:text-neutral-100 animate-opacity ${
                 pathname === "/about" && selected
               }`}
             >
@@ -103,12 +100,17 @@ export default function NavBar() {
             href="https://drive.google.com/file/d/1OnT9r7J92da_CVz9K7e_BXUB98A9K2PZ/view?usp=drive_link"
             target="_blank"
           >
-            <p className="b2 text-neutral-900 dark:text-neutral-100">Resume</p>
+            <p className="b2 text-neutral-900 dark:text-neutral-100 animate-opacity">
+              Resume
+            </p>
           </a>
         </div>
 
         {/* Logo */}
-        <a href="/" className="absolute left-1/2 translate-x-[-16px] w-8 h-8">
+        <a
+          href="/"
+          className="absolute left-1/2 translate-x-[-16px] w-8 h-8 animate-opacity"
+        >
           <img
             src={logoLightImg.src}
             alt="Vin Bui's Logo"

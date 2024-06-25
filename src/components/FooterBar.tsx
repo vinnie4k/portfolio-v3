@@ -24,11 +24,11 @@ export default function FooterBar() {
       </p>
 
       {/* Toggle */}
-      <div className="flex flex-col gap-3 justify-end h-[84px] md:absolute md:left-1/2 md:translate-x-[-50%]">
+      <div className="relative flex flex-col gap-3 justify-end h-[84px] md:absolute md:left-1/2 md:translate-x-[-50%]">
         {/* Circle */}
         <Transition show={isShowing}>
           <div
-            className={`animate-footer-circle bg-primary-700 dark:bg-primary-300 rounded-[24px] w-10 h-10 flex items-center justify-center ${
+            className={`absolute top-0 animate-footer-circle bg-primary-700 dark:bg-primary-300 rounded-[24px] w-10 h-10 flex items-center justify-center ${
               isDark ? "ml-[148px]" : "ml-[38px]"
             }`}
           >
@@ -44,7 +44,7 @@ export default function FooterBar() {
         <div className="flex flex-row items-end">
           <button
             className={`flex flex-row items-end gap-6 animate-footer-bar ${
-              isDark ? "" : "pt-0"
+              isDark ? "" : "pt-12"
             }`}
             onClick={() => {
               setIsShowing(false);
@@ -64,7 +64,7 @@ export default function FooterBar() {
           </button>
           <button
             className={`pl-[22px] flex flex-row items-end gap-6 animate-footer-bar ${
-              isDark ? "pt-0" : ""
+              isDark ? "pt-12" : ""
             }`}
             onClick={() => {
               setIsShowing(false);
