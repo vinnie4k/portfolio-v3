@@ -61,7 +61,7 @@ export default function NavBar() {
         transition={{
           ease: "easeOut",
           duration: 0.5,
-          delay: pathname === "/" ? 0.5 : 0,
+          delay: 0.5,
         }}
         className={`transition-colors duration-300 max-md:hidden fixed w-full z-10 py-6 px-8 lg:px-[calc((100vw-1128px)/2)] flex flex-row justify-between items-center ${
           pathname === "/scribbly" && "dark"

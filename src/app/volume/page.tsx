@@ -21,7 +21,7 @@ export default function Volume() {
   return (
     <>
       {/* Hero */}
-      <div className="h-[780px] md:h-[780px] lg:h-[880px]">
+      <div className="h-[720px] md:h-[780px] lg:h-[880px]">
         <div className="flex flex-col gap-12 lg:gap-16 items-center hero-container grad-volume">
           {/* Heading */}
           <motion.div
@@ -51,7 +51,7 @@ export default function Volume() {
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             src={volumeMain.src}
             alt="Image of the Volume project"
-            className="max-h-[420px] md:max-h-[560px] object-contain"
+            className="max-h-[360px] md:max-h-[560px] object-contain"
           />
         </div>
       </div>

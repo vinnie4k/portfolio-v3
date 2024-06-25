@@ -13,7 +13,7 @@ export default function Blog() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.5, delay: 0.5 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
         className="flex flex-col gap-4 items-center justify-center text-center h-[500px]"
       >
         <h1 className="text-neutral-900 dark:text-neutral-100">Coming Soon</h1>
@@ -43,7 +43,7 @@ export default function Blog() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1.5 }}
         className="flex flex-col gap-4 lg:gap-6"
       >
         <h2 className="text-neutral-900">Featured</h2>

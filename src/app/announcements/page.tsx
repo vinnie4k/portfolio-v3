@@ -10,7 +10,7 @@ export default function Announcements() {
   return (
     <>
       {/* Hero */}
-      <div className="h-[620px] md:h-[659px] lg:h-[739px]">
+      <div className="h-[600px] md:h-[659px] lg:h-[739px]">
         <div className="flex flex-col gap-12 lg:gap-16 items-center hero-container grad-announcements">
           {/* Heading */}
           <motion.div
@@ -42,7 +42,7 @@ export default function Announcements() {
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             src={announcementsMain.src}
             alt="Image of the Announcements project"
-            className="max-h-[240px] md:max-h-[419px] object-contain"
+            className="max-h-[200px] md:max-h-[419px] object-contain"
           />
         </div>
       </div>

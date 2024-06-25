@@ -51,7 +51,7 @@ export default function Scribbly() {
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             src={scribblyMain.src}
             alt="Image of the Scribbly project"
-            className="max-h-[440px] md:max-h-[520px] object-contain"
+            className="max-h-[400px] md:max-h-[520px] object-contain"
           />
         </div>
       </div>
