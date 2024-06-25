@@ -14,7 +14,7 @@ export default function WorkDescription({
   return (
     <div className="grid grid-cols-2 gap-8 md:flex md:flex-row justify-center md:justify-between md:gap-24">
       {/* Role */}
-      <div className="flex flex-col gap-2 max-md:w-[136px]">
+      <div className="flex flex-col gap-2 max-md:w-[148px]">
         <p className="label text-neutral-600 dark:text-neutral-400">ROLE</p>
         <div>
           {roles.map((text, idx) => (
@@ -29,7 +29,7 @@ export default function WorkDescription({
       </div>
 
       {/* Timeline */}
-      <div className="flex flex-col gap-2 max-md:w-[136px]">
+      <div className="flex flex-col gap-2 max-md:w-[148px]">
         <p className="label text-neutral-600 dark:text-neutral-400">TIMELINE</p>
         <div>
           {timeline.map((text, idx) => (
@@ -44,7 +44,7 @@ export default function WorkDescription({
       </div>
 
       {/* Frontend */}
-      <div className="flex flex-col gap-2 max-md:w-[136px]">
+      <div className="flex flex-col gap-2 max-md:w-[148px]">
         <p className="label text-neutral-600 dark:text-neutral-400">FRONTEND</p>
         <div>
           {frontend.map((text, idx) => (
@@ -59,7 +59,7 @@ export default function WorkDescription({
       </div>
 
       {/* Backend */}
-      <div className="flex flex-col gap-2 max-md:w-[136px]">
+      <div className="flex flex-col gap-2 max-md:w-[148px]">
         <p className="label text-neutral-600 dark:text-neutral-400">BACKEND</p>
         <div>
           {backend.map((text, idx) => (
