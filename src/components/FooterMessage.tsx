@@ -9,7 +9,7 @@ export default function FooterMessage() {
       <p className="s2 text-neutral-600 dark:text-neutral-400">
         Unleash our creativity and make something extraordinary happen.{" "}
         <span className="animate-underline underline-offset-[4px] hover:underline-offset-[6px] cursor-pointer">
-          Send me a message
+          <a href="mailto:b.vinhan01@gmail.com">Send me a message</a>
         </span>{" "}
         and let's explore the possibilities.
       </p>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Project } from "@/constants";
 import placeholderImg from "../../public/placeholder.png";
 import announcementsImg from "../../public/announcements/announcements-main.png";
@@ -6,6 +8,7 @@ import statusImg from "../../public/status/status-main.png";
 import grabbitImg from "../../public/grabbit/grabbit-main.png";
 import volumeImg from "../../public/volume/volume-main.png";
 import scribblyImg from "../../public/scribbly/scribbly-main.png";
+import { motion } from "framer-motion";
 
 interface props {
   project: Project;
@@ -78,8 +81,7 @@ export default function WorkCell({ project }: props) {
       imageSrc = scribblyImg;
       imageAlt = "Image of the Scribbly project";
       gradient = "grad-scribbly";
-      imageStyle =
-        "w-[160px] md:w-[320px] lg:w-[400px] mx-auto translate-y-[-16px] md:translate-y-[-40px] lg:translate-y-[-64px]";
+      imageStyle = "w-[160px] md:w-[320px] lg:w-[400px] mx-auto";
       break;
     }
   }
@@ -87,15 +89,25 @@ export default function WorkCell({ project }: props) {
   return (
     <a
       href={src}
-      className={`${gradient} flex flex-col gap-4 md:gap-8 p-6 md:p-12 pb-0 md:pb-0 rounded-[16px] md:rounded-[24px] h-[320px] md:h-[560px] lg:h-[624px] animate-work-cell overflow-hidden ${
-        project === Project.Scribbly && "dark"
+      className={`${gradient} flex flex-col p-6 md:p-12 pb-0 md:pb-0 rounded-[16px] md:rounded-[24px] h-[320px] md:h-[560px] lg:h-[624px] animate-work-cell overflow-hidden ${
+        project === Project.Scribbly
+          ? "dark gap-0 hover:gap-2 md:hover:gap-4"
+          : "gap-4 md:gap-8"
       }`}
     >
       <div className="flex flex-col gap-1 text-end">
         <p className="b1 text-neutral-700 dark:text-neutral-300">{subtitle}</p>
         <h3 className="text-neutral-900 dark:text-neutral-100">{title}</h3>
       </div>
-      <img src={imageSrc.src} alt={imageAlt} className={imageStyle} />
+      <motion.img
+        initial={{ opacity: 0, y: 48 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.5 }}
+        viewport={{ once: true }}
+        src={imageSrc.src}
+        alt={imageAlt}
+        className={imageStyle}
+      />
     </a>
   );
 }

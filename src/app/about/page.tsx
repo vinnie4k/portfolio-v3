@@ -1,6 +1,9 @@
+"use client";
+
 import headshotImg from "../../../public/about/headshot.png";
 import ExperienceCell from "@/components/ExperienceCell";
 import { Experience } from "@/constants";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -8,14 +11,22 @@ export default function About() {
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-12 md:flex-row lg:gap-24">
           {/* Image */}
-          <img
+          <motion.img
+            initial={{ opacity: 0, y: 48 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
             src={headshotImg.src}
             alt="Headshot of Vin Bui"
             className="h-[320px] md:w-[240px] md:h-[256px] lg:w-[360px] lg:h-[400px] rounded-[16px] object-cover"
           />
 
           {/* Description */}
-          <div className="flex flex-col gap-3 lg:gap-6">
+          <motion.div
+            initial={{ opacity: 0, y: 48 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+            className="flex flex-col gap-3 lg:gap-6"
+          >
             <h3 className="text-neutral-800 dark:text-neutral-200">
               I'm a Full-stack Developer from Dallas, Texas.
             </h3>
@@ -32,16 +43,21 @@ export default function About() {
               hiking, camping, fishing, or stargazing! I'm also a big fan of
               basketball, tennis, and fitness.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         {/* Experience */}
-        <div className="flex flex-col gap-4 md:gap-0 md:relative md:h-[272px] lg:h-[336px]">
+        <motion.div
+          initial={{ opacity: 0, y: 48 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+          className="flex flex-col gap-4 md:gap-0 md:relative md:h-[272px] lg:h-[336px]"
+        >
           <ExperienceCell experience={Experience.Glassdoor} />
           <ExperienceCell experience={Experience.Terra} />
           <ExperienceCell experience={Experience.Llounge} />
           <ExperienceCell experience={Experience.AppDev} />
-        </div>
+        </motion.div>
       </div>
     </>
   );
