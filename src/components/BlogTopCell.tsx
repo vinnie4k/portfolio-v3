@@ -30,7 +30,7 @@ export default function BlogTopCell({
     >
       {/* Image */}
       <motion.img
-        initial={{ opacity: 0, y: 48 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
         src={imageSrc.src}
@@ -40,7 +40,7 @@ export default function BlogTopCell({
 
       {/* Details */}
       <motion.div
-        initial={{ opacity: 0, y: 48 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
         className="flex flex-col gap-2 lg:gap-4 md:justify-center"

@@ -70,7 +70,7 @@ export default function RootLayout({
         {/* Header */}
         <NavBar />
 
-        <div className="bg-secondary-300 dark:bg-primary-900 transition-colors duration-300 mx-auto flex flex-col gap-[120px] lg:gap-[160px] pt-[120px] lg:pt-[160px] pb-[60px] lg:pb-[80px] px-[16px] md:px-[32px] lg:px-[calc((100vw-1128px)/2)]">
+        <div className="mx-auto flex flex-col gap-[120px] lg:gap-[160px] pt-[120px] lg:pt-[160px] pb-[60px] lg:pb-[80px] px-[16px] md:px-[32px] lg:px-[calc((100vw-1128px)/2)]">
           {children}
 
           {/* Footer */}

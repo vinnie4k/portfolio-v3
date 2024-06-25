@@ -14,7 +14,7 @@ export default function Announcements() {
         <div className="flex flex-col gap-12 lg:gap-16 items-center hero-container grad-announcements">
           {/* Heading */}
           <motion.div
-            initial={{ opacity: 0, y: 48 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
             className="flex flex-col gap-12 lg:gap-16 items-center"
@@ -37,7 +37,7 @@ export default function Announcements() {
           </motion.div>
           {/* Image */}
           <motion.img
-            initial={{ opacity: 0, y: 48 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             src={announcementsMain.src}
@@ -49,7 +49,7 @@ export default function Announcements() {
 
       {/* Content */}
       <motion.div
-        initial={{ opacity: 0, y: 48 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
         className="flex flex-col gap-12 lg:gap-20 items-center"

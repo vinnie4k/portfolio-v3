@@ -13,10 +13,6 @@
     @apply transition-all ease-in-out duration-300 hover:opacity-90;
   }
 
-  .animate-opacity-r {
-    @apply transition-all ease-in-out duration-300 opacity-90 hover:opacity-100;
-  }
-
   .animate-underline {
     @apply transition-all ease-in-out duration-300 underline decoration-primary-500 decoration-2;
   }
@@ -34,7 +30,7 @@
   }
 
   .animate-work-cell {
-    @apply transition-all ease-in-out duration-500 hover:translate-y-[-4px] hover:gap-6 md:hover:gap-12 md:hover:translate-y-[-8px] hover:shadow-lg;
+    @apply transition-all ease-in-out duration-500 hover:translate-y-[-4px] md:hover:translate-y-[-8px] hover:shadow-lg;
   }
 
   /* Gradient */
