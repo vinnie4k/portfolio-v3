@@ -115,10 +115,10 @@ export default function Grabbit() {
 
         {/* Videos */}
         <div className="flex flex-col gap-3 items-center">
-          <div className="flex flex-row gap-6">
+          <div className="flex flex-row gap-6 justify-center">
             <video
               preload="auto"
-              className="h-[400px] rounded-[24px] md:h-[600px] md:rounded-[32px]"
+              className="w-[calc(50%-28px)] rounded-[24px] md:w-[280px] md:rounded-[32px]"
               autoPlay={true}
               muted={true}
               loop={true}
@@ -127,7 +127,7 @@ export default function Grabbit() {
             </video>
             <video
               preload="auto"
-              className="h-[400px] rounded-[24px] md:h-[600px] md:rounded-[32px]"
+              className="w-[calc(50%-28px)] rounded-[24px] md:w-[280px] md:rounded-[32px]"
               autoPlay={true}
               muted={true}
               loop={true}
