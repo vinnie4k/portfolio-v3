@@ -16,6 +16,7 @@ export default function ExperienceCell({ experience }: props) {
   let imageSrc = placeholderImg;
   let imageAlt = "";
   let style = "";
+  let href = "";
 
   switch (experience) {
     case Experience.Glassdoor: {
@@ -25,6 +26,7 @@ export default function ExperienceCell({ experience }: props) {
       imageSrc = glassdoorImg;
       imageAlt = "Glassdoor Logo";
       style = "md:absolute md:top-0 md:left-[60%] md:right-0";
+      href = "https://www.glassdoor.com/index.htm";
       break;
     }
     case Experience.Terra: {
@@ -35,6 +37,7 @@ export default function ExperienceCell({ experience }: props) {
       imageAlt = "Terra Logo";
       style =
         "md:absolute md:top-[72px] lg:top-[88px] md:left-[50%] md:right-0";
+      href = "https://www.terraclap.com/";
       break;
     }
     case Experience.Llounge: {
@@ -45,6 +48,7 @@ export default function ExperienceCell({ experience }: props) {
       imageAlt = "llounge Logo";
       style =
         "md:absolute md:top-[144px] lg:top-[176px] md:left-[20%] md:right-[40%]";
+      href = "https://www.llounge.app/";
       break;
     }
     case Experience.AppDev: {
@@ -55,13 +59,15 @@ export default function ExperienceCell({ experience }: props) {
       imageAlt = "Cornell AppDev Logo";
       style =
         "md:absolute md:top-[216px] lg:top-[264px] md:left-0 md:right-[25%]";
+      href = "https://www.cornellappdev.com/";
       break;
     }
   }
 
   return (
-    <div
-      className={`flex flex-row justify-between items-center bg-primary-200 dark:bg-primary-800 py-3 md:py-2 lg:py-3 px-6 md:px-3 lg:px-6 rounded-[48px] ${style}`}
+    <a
+      href={href}
+      className={`flex flex-row justify-between items-center bg-primary-200 dark:bg-primary-800 py-3 md:py-2 lg:py-3 px-6 md:px-3 lg:px-6 rounded-[48px] animate-opacity ${style}`}
     >
       <div className="flex flex-row gap-3 items-center">
         <img src={imageSrc.src} alt={imageAlt} className="rounded-[16px] w-8" />
@@ -77,6 +83,6 @@ export default function ExperienceCell({ experience }: props) {
       <p className="b1 font-medium text-neutral-900 dark:text-neutral-100">
         {year}
       </p>
-    </div>
+    </a>
   );
 }

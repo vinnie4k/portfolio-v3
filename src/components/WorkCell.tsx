@@ -90,7 +90,7 @@ export default function WorkCell({ project }: props) {
     <a
       href={src}
       className={`${gradient} flex flex-col p-6 md:p-12 pb-0 md:pb-0 rounded-[16px] md:rounded-[24px] h-[320px] md:h-[560px] lg:h-[624px] animate-work-cell overflow-hidden ${
-        project === Project.Scribbly ? "dark gap-0" : "gap-4 md:gap-8"
+        project === Project.Scribbly ? "gap-0" : "gap-4 md:gap-8"
       }`}
     >
       <div className="flex flex-col gap-1 text-end">

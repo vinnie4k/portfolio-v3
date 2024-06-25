@@ -22,7 +22,7 @@
   }
 
   .animate-footer-bar {
-    @apply transition-all ease-in-out duration-200 cursor-pointer pt-4 h-8 hover:pt-0;
+    @apply transition-all ease-in-out duration-200 cursor-pointer pt-16 h-20 hover:pt-12;
   }
 
   .animate-footer-circle {
@@ -35,27 +35,27 @@
 
   /* Gradient */
   .grad-announcements {
-    @apply bg-gradient-to-b from-[#84D4EE] to-[#3392B1] dark:from-[#114650] dark:to-[#426685];
+    @apply bg-gradient-to-b from-[#DFF0F8] to-[#C1DFE9] dark:from-[#1F3B53] dark:to-[#36648B];
   }
 
   .grad-uplift {
-    @apply bg-gradient-to-b from-[#FCE28B] to-[#FED13C] dark:from-[#B8860B] dark:to-[#D49B0C];
+    @apply bg-gradient-to-b from-[#FFEEC4] to-[#FEE0AF] dark:from-[#996600] dark:to-[#AA7700];
   }
 
   .grad-status {
-    @apply bg-gradient-to-b from-[#7EECC8] to-[#589E87] dark:from-[#3D6E5E] dark:to-[#3A9376];
+    @apply bg-gradient-to-b from-[#DBF5D3] to-[#D0EAC7] dark:from-[#2D4821] dark:to-[#4B7646];
   }
 
   .grad-grabbit {
-    @apply bg-gradient-to-b from-[#E6E2FF] to-[#FFD1DC] dark:from-[#4C487A] dark:to-[#A65A66];
+    @apply bg-gradient-to-b from-[#F2CCC9] to-[#F0B8B4] dark:from-[#990033] dark:to-[#D44172];
   }
 
   .grad-volume {
-    @apply bg-gradient-to-b from-[#FFC8B2] to-[#FF8453] dark:from-[#993300] dark:to-[#C14000];
+    @apply bg-gradient-to-b from-[#FFCEBA] to-[#FFBFA6] dark:from-[#994400] dark:to-[#CC5500];
   }
 
   .grad-scribbly {
-    @apply bg-gradient-to-b from-[#192024] to-[#334149] dark:from-[#192024] dark:to-[#334149];
+    @apply bg-gradient-to-b from-[#D3D3D3] to-[#B5B5B5] dark:from-[#333A37] dark:to-[#4D5652];
   }
 
   /* Mobile */

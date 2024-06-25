@@ -29,7 +29,7 @@ export default function Grabbit() {
             transition={{
               ease: "easeOut",
               duration: 0.25,
-              delay: 0.5,
+              delay: 1,
             }}
             className="flex flex-col gap-12 lg:gap-16 items-center"
           >
@@ -53,7 +53,7 @@ export default function Grabbit() {
           <motion.img
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 1.25 }}
             src={grabbitMain.src}
             alt="Image of the Grabbit project"
             className="max-h-[360px] md:max-h-[560px] object-contain"
@@ -65,7 +65,7 @@ export default function Grabbit() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1.5 }}
         className="flex flex-col gap-12 lg:gap-20 items-center"
       >
         <TextBlock
@@ -126,6 +126,7 @@ export default function Grabbit() {
               autoPlay={true}
               muted={true}
               loop={true}
+              playsInline={true}
             >
               <source src={grabbit1} type="video/mp4" />
             </video>

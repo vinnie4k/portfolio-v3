@@ -27,7 +27,7 @@ export default function Volume() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
             className="flex flex-col gap-12 lg:gap-16 items-center"
           >
             <div className="flex flex-col items-center gap-1 md:gap-2 lg:gap-4">
@@ -48,7 +48,7 @@ export default function Volume() {
           <motion.img
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 1.25 }}
             src={volumeMain.src}
             alt="Image of the Volume project"
             className="max-h-[360px] md:max-h-[560px] object-contain"
@@ -60,7 +60,7 @@ export default function Volume() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1.5 }}
         className="flex flex-col gap-12 lg:gap-20 items-center"
       >
         <TextBlock
