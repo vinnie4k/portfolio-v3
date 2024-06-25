@@ -78,13 +78,13 @@ export default function Status() {
         />
 
         {/* Features */}
-        <div className="flex flex-col gap-6 lg:gap-8">
+        <div className="flex flex-col gap-6 lg:gap-8 lg:grid lg:grid-cols-3">
           <WorkFeatureCell
             icon={
               <AppCollectionIcon className="fill-neutral-900 dark:fill-neutral-100 w-7 md:w-8 lg:w-9" />
             }
             title="Apps"
-            description="Staying engaged is key to artistic growth. Notifications alert users when friends interact with their artwork or when a new daily prompt is available, encouraging consistent participation and fostering a sense of connection."
+            description="This collection stored essential details about each application, including its name, image, and any downtime intervals."
           />
           <WorkFeatureCell
             icon={

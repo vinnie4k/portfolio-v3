@@ -85,7 +85,7 @@ export default function Volume() {
         />
 
         {/* Features */}
-        <div className="flex flex-col gap-6 lg:gap-8">
+        <div className="flex flex-col gap-6 lg:gap-8 lg:grid lg:grid-cols-2">
           <WorkFeatureCell
             icon={
               <FlyerIcon className="stroke-neutral-900 dark:stroke-neutral-100 w-7 md:w-8 lg:w-9" />

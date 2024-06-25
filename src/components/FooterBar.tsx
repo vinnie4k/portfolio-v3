@@ -18,13 +18,13 @@ export default function FooterBar() {
 
   // Render
   return (
-    <div className="flex flex-col items-center gap-6 md:flex-row md:items-end md:justify-between">
+    <div className="flex flex-col items-center gap-6 md:h-[96px] md:flex-row md:items-end md:justify-between">
       <p className="b2 text-neutral-600 dark:text-neutral-400 max-md:hidden">
         Designed and developed by Vin © 2024
       </p>
 
       {/* Toggle */}
-      <div className="flex flex-col gap-3 justify-end h-[84px]">
+      <div className="flex flex-col gap-3 justify-end h-[84px] md:absolute md:left-1/2 md:translate-x-[-50%]">
         {/* Circle */}
         <Transition show={isShowing}>
           <div
