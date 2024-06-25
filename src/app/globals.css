@@ -47,7 +47,7 @@
   }
 
   .grad-grabbit {
-    @apply bg-gradient-to-b from-[#F2CCC9] to-[#F0B8B4] dark:from-[#990033] dark:to-[#C20161];
+    @apply bg-gradient-to-b from-[#F2CCC9] to-[#F0B8B4] dark:from-[#990033] dark:to-[#D44172];
   }
 
   .grad-volume {

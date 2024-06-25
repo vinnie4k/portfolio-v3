@@ -19,13 +19,13 @@ export default function Scribbly() {
   return (
     <>
       {/* Hero */}
-      <div className="h-[720px] md:h-[760px] lg:h-[840px] dark">
+      <div className="h-[720px] md:h-[760px] lg:h-[840px]">
         <div className="flex flex-col gap-12 lg:gap-16 items-center hero-container grad-scribbly">
           {/* Heading */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
             className="flex flex-col gap-12 lg:gap-16 items-center"
           >
             <div className="flex flex-col items-center gap-1 md:gap-2 lg:gap-4">
@@ -48,7 +48,7 @@ export default function Scribbly() {
           <motion.img
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 1.25 }}
             src={scribblyMain.src}
             alt="Image of the Scribbly project"
             className="max-h-[400px] md:max-h-[520px] object-contain"
@@ -60,7 +60,7 @@ export default function Scribbly() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1.5 }}
         className="flex flex-col gap-12 lg:gap-20 items-center"
       >
         <TextBlock
