@@ -56,9 +56,13 @@ export default function NavBar() {
     <>
       {/* Tablet + Desktop */}
       <motion.div
-        initial={{ opacity: 0, y: -36 }}
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.5 }}
+        transition={{
+          ease: "easeOut",
+          duration: 0.5,
+          delay: pathname === "/" ? 0.5 : 0,
+        }}
         className={`transition-colors duration-300 max-md:hidden fixed w-full z-10 py-6 px-8 lg:px-[calc((100vw-1128px)/2)] flex flex-row justify-between items-center ${
           pathname === "/scribbly" && "dark"
         } ${hasScrolled && backgroundColor}`}
