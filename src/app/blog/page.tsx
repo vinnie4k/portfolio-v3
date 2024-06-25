@@ -7,6 +7,19 @@ import BlogExploreCell from "@/components/BlogExploreCell";
 import { motion } from "framer-motion";
 
 export default function Blog() {
+  // TODO: Uncomment when done
+  return (
+    <>
+      <div className="flex flex-col gap-4 items-center justify-center text-center h-[500px]">
+        <h1 className="text-neutral-900 dark:text-neutral-100">Coming Soon</h1>
+        <p className="b1 text-neutral-900 dark:text-neutral-100">
+          This page is currently in development and will be available to view
+          soon. Check back for updates!
+        </p>
+      </div>
+    </>
+  );
+
   return (
     <>
       {/* Top */}
