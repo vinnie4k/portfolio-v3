@@ -12,7 +12,7 @@ import logoDarkImg from "../../public/logo-dark.png";
 export default function NavBar() {
   // Hooks
   const pathname = usePathname();
-  const [hasScrolled, setHasScrolled] = useState(window.scrollY > 0);
+  const [hasScrolled, setHasScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setHasScrolled(window.scrollY > 0);
