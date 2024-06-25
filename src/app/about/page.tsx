@@ -14,7 +14,7 @@ export default function About() {
           <motion.img
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
             src={headshotImg.src}
             alt="Headshot of Vin Bui"
             className="h-[320px] md:w-[240px] md:h-[256px] lg:w-[360px] lg:h-[400px] rounded-[16px] object-cover"
@@ -24,7 +24,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+            transition={{ ease: "easeOut", duration: 0.25, delay: 1.25 }}
             className="flex flex-col gap-3 lg:gap-6"
           >
             <h3 className="text-neutral-800 dark:text-neutral-200">
@@ -50,7 +50,7 @@ export default function About() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
+          transition={{ ease: "easeOut", duration: 0.25, delay: 1.5 }}
           className="flex flex-col gap-4 md:gap-0 md:relative md:h-[272px] lg:h-[336px]"
         >
           <ExperienceCell experience={Experience.Glassdoor} />

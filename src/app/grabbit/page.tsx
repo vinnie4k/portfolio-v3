@@ -20,7 +20,7 @@ export default function Grabbit() {
   return (
     <>
       {/* Hero */}
-      <div className="h-[800px] md:h-[800px] lg:h-[900px]">
+      <div className="h-[720px] md:h-[800px] lg:h-[900px]">
         <div className="flex flex-col gap-12 lg:gap-16 items-center hero-container grad-grabbit">
           {/* Heading */}
           <motion.div
@@ -56,7 +56,7 @@ export default function Grabbit() {
             transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
             src={grabbitMain.src}
             alt="Image of the Grabbit project"
-            className="max-h-[420px] md:max-h-[560px] object-contain"
+            className="max-h-[360px] md:max-h-[560px] object-contain"
           />
         </div>
       </div>

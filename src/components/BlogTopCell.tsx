@@ -32,7 +32,7 @@ export default function BlogTopCell({
       <motion.img
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.25, delay: 0.5 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1 }}
         src={imageSrc.src}
         alt={imageAlt}
         className="h-[320px] md:h-[200px] lg:h-[320px] lg:w-[480px] rounded-[12px] md:rounded-[16px] object-cover"
@@ -42,7 +42,7 @@ export default function BlogTopCell({
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.25, delay: 0.75 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1.25 }}
         className="flex flex-col gap-2 lg:gap-4 md:justify-center"
       >
         <p className="b2 font-medium text-primary-700 dark:text-secondary-300">
