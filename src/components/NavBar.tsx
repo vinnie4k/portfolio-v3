@@ -127,7 +127,7 @@ export default function NavBar() {
       </motion.div>
 
       {/* Mobile */}
-      <div className="md:hidden fixed top-8 left-1/2 z-10 w-[400px] mx-[-200px]">
+      <div className="md:hidden fixed top-8 w-[calc(100%-32px)] left-4">
         <div className="flex flex-row justify-between items-center bg-navbar-l dark:bg-navbar-d backdrop-blur-lg py-3 px-4 rounded-[24px]">
           <a href="/">
             <p
