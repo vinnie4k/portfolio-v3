@@ -136,6 +136,7 @@ export default function Grabbit() {
               autoPlay={true}
               muted={true}
               loop={true}
+              playsInline={true}
             >
               <source src={grabbit2} type="video/mp4" />
             </video>
