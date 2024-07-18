@@ -1,8 +1,8 @@
-import placeholderImg from "../../public/placeholder.png";
-import glassdoorImg from "../../public/about/glassdoor.png";
-import terraImg from "../../public/about/terra.png";
-import lloungeImg from "../../public/about/llounge.png";
-import appdevImg from "../../public/about/appdev.png";
+import placeholderImg from "../../../public/placeholder.png";
+import glassdoorImg from "../../../public/about/glassdoor.png";
+import terraImg from "../../../public/about/terra.png";
+import lloungeImg from "../../../public/about/llounge.png";
+import appdevImg from "../../../public/about/appdev.png";
 import { Experience } from "@/models/enums";
 
 interface props {
