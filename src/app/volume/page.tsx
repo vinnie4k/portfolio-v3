@@ -1,7 +1,7 @@
 "use client";
 
-import WorkDescription from "@/components/WorkDescription";
-import TextBlock from "@/components/TextBlock";
+import WorkDescription from "@/components/work/WorkDescription";
+import TextBlock from "@/components/shared/TextBlock";
 import volumeMain from "../../../public/volume/volume-main.png";
 import volume1 from "../../../public/volume/volume-1.png";
 import volume2 from "../../../public/volume/volume-2.png";
@@ -9,11 +9,11 @@ import volume3 from "../../../public/volume/volume-3.png";
 import volume4 from "../../../public/volume/volume-4.png";
 import volume5 from "../../../public/volume/volume-5.png";
 import volume6 from "../../../public/volume/volume-6.png";
-import ImageBlock from "@/components/ImageBlock";
-import LinksCell from "@/components/LinksCell";
-import NextCell from "@/components/NextCell";
+import ImageBlock from "@/components/shared/ImageBlock";
+import LinksCell from "@/components/work/LinksCell";
+import NextCell from "@/components/shared/NextCell";
 import { motion } from "framer-motion";
-import WorkFeatureCell from "@/components/WorkFeatureCell";
+import WorkFeatureCell from "@/components/work/WorkFeatureCell";
 import FlyerIcon from "@/icons/FlyerIcon";
 import LockIcon from "@/icons/LockIcon";
 

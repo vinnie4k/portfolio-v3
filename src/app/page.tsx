@@ -1,9 +1,9 @@
 "use client";
 
-import HeroBubbles from "@/components/HeroBubbles";
-import HeroWave from "@/components/HeroWave";
-import WorkCell from "@/components/WorkCell";
-import { Project } from "@/constants";
+import HeroBubbles from "@/components/work/HeroBubbles";
+import HeroWave from "@/components/work/HeroWave";
+import WorkCell from "@/components/work/WorkCell";
+import { Project } from "@/models/enums";
 import { motion } from "framer-motion";
 
 export default function Work() {

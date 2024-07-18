@@ -13,7 +13,3 @@ export enum Experience {
   Llounge,
   AppDev,
 }
-
-export interface IconProps {
-  className?: string;
-}

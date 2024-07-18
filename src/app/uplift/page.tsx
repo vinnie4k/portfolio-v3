@@ -1,13 +1,13 @@
 "use client";
 
-import WorkDescription from "@/components/WorkDescription";
-import TextBlock from "@/components/TextBlock";
+import WorkDescription from "@/components/work/WorkDescription";
+import TextBlock from "@/components/shared/TextBlock";
 import upliftMain from "../../../public/uplift/uplift-main.png";
 import uplift1 from "../../../public/uplift/uplift-1.png";
 import uplift2 from "../../../public/uplift/uplift-2.png";
-import ImageBlock from "@/components/ImageBlock";
-import LinksCell from "@/components/LinksCell";
-import NextCell from "@/components/NextCell";
+import ImageBlock from "@/components/shared/ImageBlock";
+import LinksCell from "@/components/work/LinksCell";
+import NextCell from "@/components/shared/NextCell";
 import { motion } from "framer-motion";
 
 export default function Uplift() {

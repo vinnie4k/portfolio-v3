@@ -1,13 +1,13 @@
 "use client";
 
-import { Project } from "@/constants";
-import placeholderImg from "../../public/placeholder.png";
-import announcementsImg from "../../public/announcements/announcements-main.png";
-import upliftImg from "../../public/uplift/uplift-main.png";
-import statusImg from "../../public/status/status-main.png";
-import grabbitImg from "../../public/grabbit/grabbit-main.png";
-import volumeImg from "../../public/volume/volume-main.png";
-import scribblyImg from "../../public/scribbly/scribbly-main.png";
+import { Project } from "@/models/enums";
+import placeholderImg from "../../../public/placeholder.png";
+import announcementsImg from "../../../public/announcements/announcements-main.png";
+import upliftImg from "../../../public/uplift/uplift-main.png";
+import statusImg from "../../../public/status/status-main.png";
+import grabbitImg from "../../../public/grabbit/grabbit-main.png";
+import volumeImg from "../../../public/volume/volume-main.png";
+import scribblyImg from "../../../public/scribbly/scribbly-main.png";
 import { motion } from "framer-motion";
 
 interface props {

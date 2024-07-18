@@ -1,14 +1,14 @@
 "use client";
 
-import WorkDescription from "@/components/WorkDescription";
-import TextBlock from "@/components/TextBlock";
-import WorkFeatureCell from "@/components/WorkFeatureCell";
+import WorkDescription from "@/components/work/WorkDescription";
+import TextBlock from "@/components/shared/TextBlock";
+import WorkFeatureCell from "@/components/work/WorkFeatureCell";
 import scribblyMain from "../../../public/scribbly/scribbly-main.png";
 import scribbly1 from "../../../public/scribbly/scribbly-1.png";
 import scribbly2 from "../../../public/scribbly/scribbly-2.png";
-import ImageBlock from "@/components/ImageBlock";
-import LinksCell from "@/components/LinksCell";
-import NextCell from "@/components/NextCell";
+import ImageBlock from "@/components/shared/ImageBlock";
+import LinksCell from "@/components/work/LinksCell";
+import NextCell from "@/components/shared/NextCell";
 import PeopleIcon from "@/icons/PeopleIcon";
 import GalleryIcon from "@/icons/GalleryIcon";
 import MedalIcon from "@/icons/MedalIcon";

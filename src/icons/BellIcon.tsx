@@ -1,4 +1,4 @@
-import { IconProps } from "@/constants";
+import { IconProps } from "@/models/interfaces";
 
 export default function ({ className }: IconProps) {
   return (

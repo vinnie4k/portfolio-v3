@@ -2,10 +2,11 @@
 
 import "./globals.css";
 import localFont from "next/font/local";
-import FooterMessage from "@/components/FooterMessage";
-import FooterBar from "@/components/FooterBar";
-import NavBar from "@/components/NavBar";
+import FooterMessage from "@/components/shared/FooterMessage";
+import FooterBar from "@/components/shared/FooterBar";
+import NavBar from "@/components/shared/NavBar";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // Fonts
 const cooperBT = localFont({
@@ -77,6 +78,7 @@ export default function RootLayout({
           <FooterMessage />
           <FooterBar />
         </div>
+        <Analytics />
       </body>
     </html>
   );

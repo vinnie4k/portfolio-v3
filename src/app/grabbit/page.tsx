@@ -1,16 +1,16 @@
 "use client";
 
-import WorkDescription from "@/components/WorkDescription";
-import TextBlock from "@/components/TextBlock";
+import WorkDescription from "@/components/work/WorkDescription";
+import TextBlock from "@/components/shared/TextBlock";
 import grabbitMain from "../../../public/grabbit/grabbit-main.png";
 import grabbit1 from "../../../public/grabbit/grabbit-1.mp4";
 import grabbit2 from "../../../public/grabbit/grabbit-2.mp4";
 import grabbit3 from "../../../public/grabbit/grabbit-3.png";
-import ImageBlock from "@/components/ImageBlock";
-import LinksCell from "@/components/LinksCell";
-import NextCell from "@/components/NextCell";
+import ImageBlock from "@/components/shared/ImageBlock";
+import LinksCell from "@/components/work/LinksCell";
+import NextCell from "@/components/shared/NextCell";
 import { motion } from "framer-motion";
-import WorkFeatureCell from "@/components/WorkFeatureCell";
+import WorkFeatureCell from "@/components/work/WorkFeatureCell";
 import BellIcon from "@/icons/BellIcon";
 import SearchIcon from "@/icons/SearchIcon";
 import EyeIcon from "@/icons/EyeIcon";
