@@ -1,6 +1,6 @@
 "use client";
 
-import { Project } from "@/constants";
+import { Project } from "@/models/enums";
 import placeholderImg from "../../public/placeholder.png";
 import announcementsImg from "../../public/announcements/announcements-main.png";
 import upliftImg from "../../public/uplift/uplift-main.png";

@@ -1,16 +1,16 @@
 "use client";
 
-import WorkDescription from "@/components/WorkDescription";
-import TextBlock from "@/components/TextBlock";
+import WorkDescription from "@/components/work/WorkDescription";
+import TextBlock from "@/components/shared/TextBlock";
 import statusMain from "../../../public/status/status-main.png";
 import status1 from "../../../public/status/status-1.png";
 import status2 from "../../../public/status/status-2.png";
 import status3 from "../../../public/status/status-3.png";
-import ImageBlock from "@/components/ImageBlock";
-import LinksCell from "@/components/LinksCell";
-import NextCell from "@/components/NextCell";
+import ImageBlock from "@/components/shared/ImageBlock";
+import LinksCell from "@/components/work/LinksCell";
+import NextCell from "@/components/shared/NextCell";
 import { motion } from "framer-motion";
-import WorkFeatureCell from "@/components/WorkFeatureCell";
+import WorkFeatureCell from "@/components/work/WorkFeatureCell";
 import BellIcon from "@/icons/BellIcon";
 import BugIcon from "@/icons/BugIcon";
 import AppCollectionIcon from "@/icons/AppCollectionIcon";

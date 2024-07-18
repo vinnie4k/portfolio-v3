@@ -1,9 +1,9 @@
 "use client";
 
-import BlogTopCell from "@/components/BlogTopCell";
+import BlogTopCell from "@/components/blog/BlogTopCell";
 import placeholderImg from "../../../public/placeholder.png";
-import BlogFeaturedCell from "@/components/BlogFeaturedCell";
-import BlogExploreCell from "@/components/BlogExploreCell";
+import BlogFeaturedCell from "@/components/blog/BlogFeaturedCell";
+import BlogExploreCell from "@/components/blog/BlogExploreCell";
 import { motion } from "framer-motion";
 
 export default function Blog() {

@@ -1,8 +1,8 @@
 "use client";
 
 import headshotImg from "../../../public/about/headshot.png";
-import ExperienceCell from "@/components/ExperienceCell";
-import { Experience } from "@/constants";
+import ExperienceCell from "@/components/about/ExperienceCell";
+import { Experience } from "@/models/enums";
 import { motion } from "framer-motion";
 
 export default function About() {
