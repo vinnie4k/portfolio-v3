@@ -1,10 +1,10 @@
-interface props {
+interface Props {
   icon: any;
   title: string;
   description: string;
 }
 
-export default function WorkFeatureCell({ icon, title, description }: props) {
+export default function WorkFeatureCell({ icon, title, description }: Props) {
   return (
     <div className="flex flex-col gap-4 p-6 bg-secondary-500 dark:bg-primary-800 rounded-[24px] animate-hover-up">
       <div className="flex flex-row gap-4 items-center">

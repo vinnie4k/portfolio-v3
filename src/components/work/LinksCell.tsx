@@ -3,7 +3,7 @@ import GlobeIcon from "@/icons/GlobeIcon";
 import GooglePlayIcon from "@/icons/GooglePlayIcon";
 import AppStoreIcon from "@/icons/AppStoreIcon";
 
-interface props {
+interface Props {
   github: string;
   website?: string;
   appstore?: string;
@@ -15,7 +15,7 @@ export default function LinksCell({
   website,
   appstore,
   playstore,
-}: props) {
+}: Props) {
   return (
     <div className="flex flex-row items-center justify-around w-full bg-neutral-900 dark:bg-neutral-100 max-md:p-12 rounded-[24px] md:w-[600px] md:py-16 md:justify-center md:gap-24">
       {playstore && (

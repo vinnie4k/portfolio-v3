@@ -1,4 +1,4 @@
-interface props {
+interface Props {
   roles: string[];
   timeline: string[];
   frontend: string[];
@@ -10,7 +10,7 @@ export default function WorkDescription({
   timeline,
   frontend,
   backend,
-}: props) {
+}: Props) {
   return (
     <div className="grid grid-cols-2 gap-8 md:flex md:flex-row justify-center md:justify-between md:gap-24">
       {/* Role */}

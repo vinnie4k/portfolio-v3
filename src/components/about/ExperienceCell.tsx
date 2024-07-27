@@ -5,11 +5,11 @@ import lloungeImg from "../../../public/about/llounge.png";
 import appdevImg from "../../../public/about/appdev.png";
 import { Experience } from "@/models/enums";
 
-interface props {
+interface Props {
   experience: Experience;
 }
 
-export default function ExperienceCell({ experience }: props) {
+export default function ExperienceCell({ experience }: Props) {
   let company = "";
   let position = "";
   let year = "";
