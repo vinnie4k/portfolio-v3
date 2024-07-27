@@ -2,7 +2,7 @@
 import { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 
-interface props {
+interface Props {
   link: string;
   imageSrc: StaticImageData;
   imageAlt: string;
@@ -22,7 +22,7 @@ export default function BlogTopCell({
   description,
   date,
   readTime,
-}: props) {
+}: Props) {
   return (
     <a
       href={link}

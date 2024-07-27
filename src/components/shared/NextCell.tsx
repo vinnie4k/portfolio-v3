@@ -1,7 +1,7 @@
 import ArrowLeftIcon from "@/icons/ArrowLeftIcon";
 import ArrowRightIcon from "@/icons/ArrowRightIcon";
 
-interface props {
+interface Props {
   prevText: string;
   prevLink: string;
   nextText: string;
@@ -13,7 +13,7 @@ export default function NextCell({
   prevLink,
   nextText,
   nextLink,
-}: props) {
+}: Props) {
   return (
     <div className="flex flex-col justify-center gap-6 p-12 pb-16 rounded-[24px] border-2 border-primary-200 dark:border-primary-800 md:flex-row md:gap-24 md:py-[120px]">
       <a

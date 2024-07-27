@@ -10,11 +10,11 @@ import volumeImg from "../../../public/volume/volume-main.png";
 import scribblyImg from "../../../public/scribbly/scribbly-main.png";
 import { motion } from "framer-motion";
 
-interface props {
+interface Props {
   project: Project;
 }
 
-export default function WorkCell({ project }: props) {
+export default function WorkCell({ project }: Props) {
   let src = "";
   let subtitle = "";
   let title = "";

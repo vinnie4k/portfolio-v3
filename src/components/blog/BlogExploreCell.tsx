@@ -1,4 +1,4 @@
-interface props {
+interface Props {
   link: string;
   imageSrc: any;
   imageAlt: string;
@@ -18,7 +18,7 @@ export default function BlogExploreCell({
   description,
   date,
   readTime,
-}: props) {
+}: Props) {
   return (
     <a
       href={link}

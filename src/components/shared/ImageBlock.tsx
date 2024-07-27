@@ -1,7 +1,7 @@
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-interface props {
+interface Props {
   imageSrc: any;
   imageAlt: string;
   imageStyle?: string;
@@ -13,7 +13,7 @@ export default function ImageBlock({
   imageAlt,
   imageStyle,
   caption,
-}: props) {
+}: Props) {
   return (
     <div className="flex flex-col gap-3 items-center">
       <Zoom>

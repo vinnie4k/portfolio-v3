@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-interface props {
+interface Props {
   link: string;
   imageSrc: StaticImageData;
   imageAlt: string;
@@ -20,7 +20,7 @@ export default function BlogFeaturedCell({
   description,
   date,
   readTime,
-}: props) {
+}: Props) {
   return (
     <a href={link} className="flex flex-col gap-4 lg:gap-6 animate-opacity">
       {/* Image */}
