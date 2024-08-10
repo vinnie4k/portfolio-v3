@@ -86,7 +86,7 @@ export default function Uplift() {
         <ImageBlock
           imageSrc={uplift2}
           imageAlt="View fitness center information including gym capacities and facility hours through the Uplift app."
-          imageStyle="md:max-w-[888px]"
+          imageStyle="md:max-w-[800px]"
           caption="☝🏻 View fitness center information including gym capacities and facility hours through the Uplift app."
         />
         <TextBlock

@@ -120,7 +120,7 @@ export default function Volume() {
         <ImageBlock
           imageSrc={volume3}
           imageAlt="View flyers uploaded by an organization (left), read featured magazines (center), and add widgets to your home screen (right)."
-          imageStyle="md:max-w-[888px]"
+          imageStyle="md:max-w-[800px]"
           caption="☝🏻 View flyers uploaded by an organization (left), read featured magazines (center), and add widgets to your home screen (right)."
         />
         <TextBlock
