@@ -13,3 +13,7 @@ export enum Experience {
   Llounge,
   AppDev,
 }
+
+export enum CodingLanguage {
+  Swift = "swift",
+}
