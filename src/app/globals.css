@@ -12,6 +12,10 @@
     @apply text-neutral-700 dark:text-neutral-300 bg-neutral-200 dark:bg-neutral-800 px-2 py-[2px] rounded-sm;
   }
 
+  .bold {
+    @apply font-medium text-neutral-900 dark:text-neutral-100;
+  }
+
   /* Animations */
   .animate-opacity {
     @apply transition-all ease-in-out duration-300 hover:opacity-90;
