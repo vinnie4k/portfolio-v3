@@ -1,17 +1,18 @@
 "use client";
 
-import pic1 from "../../../../../public/blog/swift-basics/data-types/1.png";
-import pic2 from "../../../../../public/blog/swift-basics/data-types/2.png";
-import pic3 from "../../../../../public/blog/swift-basics/data-types/3.png";
-import pic4 from "../../../../../public/blog/swift-basics/data-types/4.png";
-import pic5 from "../../../../../public/blog/swift-basics/data-types/5.png";
-import pic6 from "../../../../../public/blog/swift-basics/data-types/6.png";
+import pic1 from "@/../public/blog/swift-basics/data-types/1.png";
+import pic2 from "@/../public/blog/swift-basics/data-types/2.png";
+import pic3 from "@/../public/blog/swift-basics/data-types/3.png";
+import pic4 from "@/../public/blog/swift-basics/data-types/4.png";
+import pic5 from "@/../public/blog/swift-basics/data-types/5.png";
+import pic6 from "@/../public/blog/swift-basics/data-types/6.png";
 import BlogHero from "@/components/blog/BlogHero";
 import { motion } from "framer-motion";
 import TextBlock from "@/components/shared/TextBlock";
 import ImageBlock from "@/components/shared/ImageBlock";
 import CodeBlock from "@/components/blog/CodeBlock";
 import { CodingLanguage } from "@/models/enums";
+import NextCell from "@/components/shared/NextCell";
 
 export default function DataTypes() {
   return (
@@ -176,6 +177,14 @@ year = 2025`}
           />
         </div>
       </motion.div>
+
+      {/* Next */}
+      <NextCell
+        prevText="Variables and Constants"
+        prevLink="/blog/swift-basics/variables-and-constants"
+        nextText="Operators"
+        nextLink="/blog/swift-basics/operators"
+      />
     </>
   );
 }

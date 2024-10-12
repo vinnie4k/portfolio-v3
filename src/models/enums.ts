@@ -9,7 +9,7 @@ export enum Project {
 
 export enum Experience {
   Glassdoor,
-  Terra,
+  Lawnstack,
   Llounge,
   AppDev,
 }

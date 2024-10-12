@@ -1,8 +1,8 @@
 "use client";
 
-import pic1 from "../../../../../public/blog/swift-basics/variables-and-constants/1.png";
-import pic2 from "../../../../../public/blog/swift-basics/variables-and-constants/2.png";
-import pic3 from "../../../../../public/blog/swift-basics/variables-and-constants/3.png";
+import pic1 from "@/../public/blog/swift-basics/variables-and-constants/1.png";
+import pic2 from "@/../public/blog/swift-basics/variables-and-constants/2.png";
+import pic3 from "@/../public/blog/swift-basics/variables-and-constants/3.png";
 import { motion } from "framer-motion";
 import BlogHero from "@/components/blog/BlogHero";
 import TextBlock from "@/components/shared/TextBlock";
@@ -100,13 +100,12 @@ instructor = "Richie"`}
         />
       </motion.div>
 
-      {/* TODO: Edit next cell */}
       {/* Next */}
       <NextCell
-        prevText="Grabbit"
-        prevLink="/grabbit"
-        nextText="Scribbly"
-        nextLink="/scribbly"
+        prevText="Variables and Constants"
+        prevLink="/blog/swift-basics/variables-and-constants"
+        nextText="Data Types"
+        nextLink="/blog/swift-basics/data-types"
       />
     </>
   );

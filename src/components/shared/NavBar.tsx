@@ -6,8 +6,8 @@ import LinkedInIcon from "@/icons/LinkedInIcon";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import logoLightImg from "../../../public/logo-light.png";
-import logoDarkImg from "../../../public/logo-dark.png";
+import logoLightImg from "@/../public/logo-light.png";
+import logoDarkImg from "@/../public/logo-dark.png";
 
 export default function NavBar() {
   // Hooks

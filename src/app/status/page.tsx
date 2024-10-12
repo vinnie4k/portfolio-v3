@@ -2,10 +2,10 @@
 
 import WorkDescription from "@/components/work/WorkDescription";
 import TextBlock from "@/components/shared/TextBlock";
-import statusMain from "../../../public/status/status-main.png";
-import status1 from "../../../public/status/status-1.png";
-import status2 from "../../../public/status/status-2.png";
-import status3 from "../../../public/status/status-3.png";
+import statusMain from "@/../public/status/status-main.png";
+import status1 from "@/../public/status/status-1.png";
+import status2 from "@/../public/status/status-2.png";
+import status3 from "@/../public/status/status-3.png";
 import ImageBlock from "@/components/shared/ImageBlock";
 import LinksCell from "@/components/work/LinksCell";
 import NextCell from "@/components/shared/NextCell";

@@ -1,7 +1,7 @@
 "use client";
 
 import WorkDescription from "@/components/work/WorkDescription";
-import announcementsMain from "../../../public/announcements/announcements-main.png";
+import announcementsMain from "@/../public/announcements/announcements-main.png";
 import NextCell from "@/components/shared/NextCell";
 import { motion } from "framer-motion";
 import TextBlock from "@/components/shared/TextBlock";
