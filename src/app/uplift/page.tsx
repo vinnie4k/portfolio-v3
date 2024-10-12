@@ -2,9 +2,9 @@
 
 import WorkDescription from "@/components/work/WorkDescription";
 import TextBlock from "@/components/shared/TextBlock";
-import upliftMain from "../../../public/uplift/uplift-main.png";
-import uplift1 from "../../../public/uplift/uplift-1.png";
-import uplift2 from "../../../public/uplift/uplift-2.png";
+import upliftMain from "@/../public/uplift/uplift-main.png";
+import uplift1 from "@/../public/uplift/uplift-1.png";
+import uplift2 from "@/../public/uplift/uplift-2.png";
 import ImageBlock from "@/components/shared/ImageBlock";
 import LinksCell from "@/components/work/LinksCell";
 import NextCell from "@/components/shared/NextCell";
@@ -86,7 +86,7 @@ export default function Uplift() {
         <ImageBlock
           imageSrc={uplift2}
           imageAlt="View fitness center information including gym capacities and facility hours through the Uplift app."
-          imageStyle="md:max-w-[888px]"
+          imageStyle="md:max-w-[800px]"
           caption="☝🏻 View fitness center information including gym capacities and facility hours through the Uplift app."
         />
         <TextBlock

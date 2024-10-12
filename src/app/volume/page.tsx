@@ -2,13 +2,13 @@
 
 import WorkDescription from "@/components/work/WorkDescription";
 import TextBlock from "@/components/shared/TextBlock";
-import volumeMain from "../../../public/volume/volume-main.png";
-import volume1 from "../../../public/volume/volume-1.png";
-import volume2 from "../../../public/volume/volume-2.png";
-import volume3 from "../../../public/volume/volume-3.png";
-import volume4 from "../../../public/volume/volume-4.png";
-import volume5 from "../../../public/volume/volume-5.png";
-import volume6 from "../../../public/volume/volume-6.png";
+import volumeMain from "@/../public/volume/volume-main.png";
+import volume1 from "@/../public/volume/volume-1.png";
+import volume2 from "@/../public/volume/volume-2.png";
+import volume3 from "@/../public/volume/volume-3.png";
+import volume4 from "@/../public/volume/volume-4.png";
+import volume5 from "@/../public/volume/volume-5.png";
+import volume6 from "@/../public/volume/volume-6.png";
 import ImageBlock from "@/components/shared/ImageBlock";
 import LinksCell from "@/components/work/LinksCell";
 import NextCell from "@/components/shared/NextCell";
@@ -120,7 +120,7 @@ export default function Volume() {
         <ImageBlock
           imageSrc={volume3}
           imageAlt="View flyers uploaded by an organization (left), read featured magazines (center), and add widgets to your home screen (right)."
-          imageStyle="md:max-w-[888px]"
+          imageStyle="md:max-w-[800px]"
           caption="☝🏻 View flyers uploaded by an organization (left), read featured magazines (center), and add widgets to your home screen (right)."
         />
         <TextBlock

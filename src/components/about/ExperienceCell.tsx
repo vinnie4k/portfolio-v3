@@ -1,8 +1,8 @@
-import placeholderImg from "../../../public/placeholder.png";
-import glassdoorImg from "../../../public/about/glassdoor.png";
-import terraImg from "../../../public/about/terra.png";
-import lloungeImg from "../../../public/about/llounge.png";
-import appdevImg from "../../../public/about/appdev.png";
+import placeholderImg from "@/../public/placeholder.png";
+import glassdoorImg from "@/../public/about/glassdoor.png";
+import lawnstackImg from "@/../public/about/lawnstack.png";
+import lloungeImg from "@/../public/about/llounge.png";
+import appdevImg from "@/../public/about/appdev.png";
 import { Experience } from "@/models/enums";
 
 interface Props {
@@ -22,22 +22,22 @@ export default function ExperienceCell({ experience }: Props) {
     case Experience.Glassdoor: {
       company = "Glassdoor";
       position = "Software Engineer Intern";
-      year = "2024~";
+      year = "2024";
       imageSrc = glassdoorImg;
       imageAlt = "Glassdoor Logo";
-      style = "md:absolute md:top-0 md:left-[60%] md:right-0";
+      style = "md:absolute md:top-0 md:left-[60%] md:right-[5%]";
       href = "https://www.glassdoor.com/index.htm";
       break;
     }
-    case Experience.Terra: {
-      company = "Terra";
+    case Experience.Lawnstack: {
+      company = "Lawnstack";
       position = "Lead Software Engineer";
       year = "2024~";
-      imageSrc = terraImg;
-      imageAlt = "Terra Logo";
+      imageSrc = lawnstackImg;
+      imageAlt = "Lawnstack Logo";
       style =
         "md:absolute md:top-[72px] lg:top-[88px] md:left-[50%] md:right-0";
-      href = "https://www.terraclap.com/";
+      href = "https://lawnstack.com/";
       break;
     }
     case Experience.Llounge: {

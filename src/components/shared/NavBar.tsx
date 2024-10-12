@@ -6,8 +6,8 @@ import LinkedInIcon from "@/icons/LinkedInIcon";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import logoLightImg from "../../../public/logo-light.png";
-import logoDarkImg from "../../../public/logo-dark.png";
+import logoLightImg from "@/../public/logo-light.png";
+import logoDarkImg from "@/../public/logo-dark.png";
 
 export default function NavBar() {
   // Hooks
@@ -35,22 +35,7 @@ export default function NavBar() {
     "/scribbly",
   ].includes(pathname);
   const isBlog = pathname.startsWith("/blog");
-
-  // TODO: Uncomment and figure out dark mode
   let backgroundColor = "bg-secondary-300 dark:bg-primary-900";
-  // if (pathname === "/announcements") {
-  //   backgroundColor = "bg-[#84D4EE]";
-  // } else if (pathname === "/uplift") {
-  //   backgroundColor = "bg-[#FCE28B]";
-  // } else if (pathname === "/status") {
-  //   backgroundColor = "bg-[#7EECC8]";
-  // } else if (pathname === "/grabbit") {
-  //   backgroundColor = "bg-[#E6E2FF]";
-  // } else if (pathname === "/volume") {
-  //   backgroundColor = "bg-[#FFC8B2]";
-  // } else if (pathname === "/scribbly") {
-  //   backgroundColor = "bg-[#192024]";
-  // }
 
   return (
     <>

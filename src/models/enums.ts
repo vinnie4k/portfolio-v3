@@ -9,7 +9,11 @@ export enum Project {
 
 export enum Experience {
   Glassdoor,
-  Terra,
+  Lawnstack,
   Llounge,
   AppDev,
+}
+
+export enum CodingLanguage {
+  Swift = "swift",
 }

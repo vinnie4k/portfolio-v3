@@ -2,10 +2,10 @@
 
 import WorkDescription from "@/components/work/WorkDescription";
 import TextBlock from "@/components/shared/TextBlock";
-import grabbitMain from "../../../public/grabbit/grabbit-main.png";
-import grabbit1 from "../../../public/grabbit/grabbit-1.mp4";
-import grabbit2 from "../../../public/grabbit/grabbit-2.mp4";
-import grabbit3 from "../../../public/grabbit/grabbit-3.png";
+import grabbitMain from "@/../public/grabbit/grabbit-main.png";
+import grabbit1 from "@/../public/grabbit/grabbit-1.mp4";
+import grabbit2 from "@/../public/grabbit/grabbit-2.mp4";
+import grabbit3 from "@/../public/grabbit/grabbit-3.png";
 import ImageBlock from "@/components/shared/ImageBlock";
 import LinksCell from "@/components/work/LinksCell";
 import NextCell from "@/components/shared/NextCell";

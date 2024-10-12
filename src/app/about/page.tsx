@@ -1,6 +1,6 @@
 "use client";
 
-import headshotImg from "../../../public/about/headshot.png";
+import headshotImg from "@/../public/about/headshot.png";
 import ExperienceCell from "@/components/about/ExperienceCell";
 import { Experience } from "@/models/enums";
 import { motion } from "framer-motion";
@@ -54,7 +54,7 @@ export default function About() {
           className="flex flex-col gap-4 md:gap-0 md:relative md:h-[272px] lg:h-[336px]"
         >
           <ExperienceCell experience={Experience.Glassdoor} />
-          <ExperienceCell experience={Experience.Terra} />
+          <ExperienceCell experience={Experience.Lawnstack} />
           <ExperienceCell experience={Experience.Llounge} />
           <ExperienceCell experience={Experience.AppDev} />
         </motion.div>
