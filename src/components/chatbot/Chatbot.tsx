@@ -76,19 +76,21 @@ export default function Chatbot() {
       initial={{ top: "calc(100% - 64px)" }}
       animate={collapsed ? { top: "calc(100% - 64px)" } : { top: "30%" }}
       transition={{ ease: "easeOut", duration: 0.25 }}
-      className="fixed flex flex-col gap-6 max-lg:hidden w-[360px] shadow-sm bg-primary-100 rounded-t-2xl bottom-0 right-[calc((100%-1127px)/2)]"
+      className="fixed flex flex-col gap-6 max-lg:hidden w-[360px] shadow-sm bg-primary-100 dark:bg-primary-800 rounded-t-2xl bottom-0 right-[calc((100%-1127px)/2)]"
     >
       {/* Header */}
       <div
-        className="flex flex-row justify-between items-center p-4 bg-primary-200 rounded-t-2xl cursor-pointer hover:bg-primary-300 transition-colors"
+        className="flex flex-row justify-between items-center p-4 bg-primary-200 dark:bg-primary-700 rounded-t-2xl cursor-pointer hover:bg-primary-300 hover:dark:bg-primary-600 transition-colors"
         onClick={() => setCollapsed(!collapsed)}
       >
         <div className="flex flex-row gap-4 items-center">
           <img src={chatbotImg.src} alt="Image of VinBot" className="w-8 h-8" />
-          <p className="b1 font-semibold">VinBot</p>
+          <p className="b1 font-semibold text-neutral-900 dark:text-neutral-100">
+            VinBot
+          </p>
         </div>
         <ChevronDownIcon
-          className={`w-5 h-5 stroke-neutral-900 transition-all ${
+          className={`w-5 h-5 stroke-neutral-900 dark:stroke-neutral-100 transition-all ${
             collapsed && "rotate-180"
           }`}
         />
@@ -103,14 +105,14 @@ export default function Chatbot() {
       </div>
 
       {/* Input */}
-      <div className="flex flex-row gap-2 items-center py-3 px-4 mx-4 mb-6 rounded-2xl border border-primary-500">
-        <ChatIcon className="w-5 h-5 stroke-neutral-500" />
+      <div className="flex flex-row gap-2 items-center py-3 px-4 mx-4 mb-6 rounded-2xl border border-primary-500 dark:border-primary-700">
+        <ChatIcon className="w-5 h-5 stroke-primary-500 dark:stroke-primary-600" />
         <Input
           value={userInput}
           type="text"
           onChange={handleInputChange}
           onKeyDown={(e) => e.key === "Enter" && handleSend()}
-          className="b2 font-regular bg-primary-100 outline-none w-full text-neutral-900"
+          className="b2 font-regular bg-primary-100 dark:bg-primary-800 outline-none w-full text-neutral-900 dark:text-neutral-100 placeholder:text-primary-500 placeholder:dark:text-primary-600"
           placeholder="Ask anything..."
           autoSave="off"
           autoComplete="off"
@@ -118,7 +120,9 @@ export default function Chatbot() {
         <Button onClick={handleSend}>
           <SendIcon
             className={`w-5 h-5 transition-colors ${
-              userInput.length > 0 ? "fill-neutral-900" : "fill-neutral-500"
+              userInput.length > 0
+                ? "fill-neutral-900 dark:fill-primary-100"
+                : "fill-primary-500 dark:fill-primary-600"
             }`}
           />
         </Button>

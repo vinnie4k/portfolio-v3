@@ -15,7 +15,7 @@ export default function ChatbotMessage({ msg }: Props) {
           transition={{ ease: "easeOut", duration: 0.5 }}
           className="flex flex-col items-end"
         >
-          <p className="b2 font-normal p-4 bg-primary-200 rounded-2xl max-w-fit text-right">
+          <p className="b2 font-normal p-4 bg-primary-200 dark:bg-primary-700 rounded-2xl max-w-fit text-right text-neutral-900 dark:text-neutral-100">
             {msg.user}
           </p>
         </motion.div>
@@ -27,7 +27,7 @@ export default function ChatbotMessage({ msg }: Props) {
         transition={{ ease: "easeOut", duration: 0.5 }}
         className="flex flex-col items-start"
       >
-        <p className="b2 font-normal p-4 border border-primary-300 rounded-2xl max-w-fit">
+        <p className="b2 font-normal p-4 border border-primary-300 dark:border-primary-700 rounded-2xl max-w-fit text-neutral-900 dark:text-neutral-100">
           {msg.bot}
         </p>
       </motion.div>
