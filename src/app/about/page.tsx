@@ -28,20 +28,21 @@ export default function About() {
             className="flex flex-col gap-3 lg:gap-6"
           >
             <h3 className="text-neutral-800 dark:text-neutral-200">
-              I'm a Full-stack Developer from Dallas, Texas.
+              I'm a Product Engineer from Dallas, Texas.
             </h3>
             <p className="b1 text-neutral-600 dark:text-neutral-400">
-              I'm a senior at Cornell University, studying Information Science,
-              Systems, and Technology with a focus on interactive technologies
-              and UX design. I'm passionate about leveraging technology to
-              create intuitive and impactful solutions. At Cornell, I've
-              collaborated on a variety of projects that have reinforced my
-              belief in the power of software to address real-world challenges.
+              A fourth-year student at Cornell University, studying Information
+              Science, Systems, and Technology with a focus on interactive
+              technologies and UX design. I'm passionate about leveraging
+              technology to create intuitive and impactful solutions. At
+              Cornell, I've collaborated on a variety of projects that have
+              reinforced my belief in the power of software to address
+              real-world challenges.
             </p>
             <p className="b1 text-neutral-600 dark:text-neutral-400">
               When I'm not coding, you can find me outside enjoying nature –
-              hiking, camping, fishing, or stargazing! I'm also a big fan of
-              basketball, tennis, and fitness.
+              hiking 🥾, camping 🏕️, or stargazing 🌌! I also enjoy rock
+              climbing 🧗‍♂️, tennis 🎾, and photography 📸.
             </p>
           </motion.div>
         </div>

@@ -22,7 +22,7 @@ export default function Work() {
               Hi. I'm Vin.
             </h1>
             <h1 className="text-neutral-900 dark:text-neutral-100">
-              Developer & Engineer.
+              A Product Engineer.
             </h1>
           </motion.div>
           <motion.p
@@ -31,9 +31,9 @@ export default function Work() {
             transition={{ ease: "easeOut", duration: 0.25, delay: 1.25 }}
             className="s2 text-neutral-600 dark:text-neutral-400"
           >
-            A driven creator and technologist, constantly seeking to elevate
-            user experiences through innovative solutions and cutting-edge
-            development.
+            A design-focused engineer dedicated to crafting intuitive and
+            delightful user experiences through thoughtful interaction and
+            innovative solutions.
           </motion.p>
         </div>
         <motion.div

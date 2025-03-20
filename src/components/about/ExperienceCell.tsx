@@ -1,8 +1,8 @@
-import placeholderImg from "@/../public/placeholder.png";
+import appdevImg from "@/../public/about/appdev.png";
 import glassdoorImg from "@/../public/about/glassdoor.png";
 import lawnstackImg from "@/../public/about/lawnstack.png";
 import lloungeImg from "@/../public/about/llounge.png";
-import appdevImg from "@/../public/about/appdev.png";
+import placeholderImg from "@/../public/placeholder.png";
 import { Experience } from "@/models/enums";
 
 interface Props {
@@ -25,18 +25,18 @@ export default function ExperienceCell({ experience }: Props) {
       year = "2024";
       imageSrc = glassdoorImg;
       imageAlt = "Glassdoor Logo";
-      style = "md:absolute md:top-0 md:left-[60%] md:right-[5%]";
+      style = "md:absolute md:top-0 md:left-[50%] md:right-0";
       href = "https://www.glassdoor.com/index.htm";
       break;
     }
     case Experience.Lawnstack: {
       company = "Lawnstack";
-      position = "Lead Software Engineer";
-      year = "2024~";
+      position = "Software Engineer Intern";
+      year = "2024";
       imageSrc = lawnstackImg;
       imageAlt = "Lawnstack Logo";
       style =
-        "md:absolute md:top-[72px] lg:top-[88px] md:left-[50%] md:right-0";
+        "md:absolute md:top-[72px] lg:top-[88px] md:left-[35%] md:right-[30%]";
       href = "https://lawnstack.com/";
       break;
     }
@@ -47,7 +47,7 @@ export default function ExperienceCell({ experience }: Props) {
       imageSrc = lloungeImg;
       imageAlt = "llounge Logo";
       style =
-        "md:absolute md:top-[144px] lg:top-[176px] md:left-[20%] md:right-[40%]";
+        "md:absolute md:top-[144px] lg:top-[176px] md:left-[10%] md:right-[55%]";
       href = "https://www.llounge.app/";
       break;
     }
@@ -58,7 +58,7 @@ export default function ExperienceCell({ experience }: Props) {
       imageSrc = appdevImg;
       imageAlt = "Cornell AppDev Logo";
       style =
-        "md:absolute md:top-[216px] lg:top-[264px] md:left-0 md:right-[25%]";
+        "md:absolute md:top-[216px] lg:top-[264px] md:left-0 md:right-[40%]";
       href = "https://www.cornellappdev.com/";
       break;
     }
